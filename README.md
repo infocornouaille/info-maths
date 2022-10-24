@@ -24,3 +24,8 @@ conda install poetry
 poetry install
 ```
 
+https://info-maths.netlify.app
+
+## A ajouter
+
+- annotations
