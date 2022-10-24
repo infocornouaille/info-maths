@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "info-maths"
+version = "0.1.0"
+description = "Informatique et Mathématiques"
+authors = ["David Couronné <couronne.david@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mkdocs = "^1.4.1"
+mkdocs-material = "^8.5.7"
+pymdown-extensions = "^9.7"
+fontawesome-markdown = "^0.2.6"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+jupyter-black = "^0.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
