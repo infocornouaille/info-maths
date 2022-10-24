@@ -7,6 +7,8 @@ site_description: >-
 # Repository
 repo_name: davidcouronne/info-maths
 repo_url: https://github.com/davidcouronne/info-maths
+edit_uri: edit/main/docs/
+
 
 # Configuration
 theme:
@@ -87,3 +89,7 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+
+# Page tree
+nav:
+  - Accueil: index.md
