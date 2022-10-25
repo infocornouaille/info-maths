@@ -24,15 +24,15 @@ theme:
     - navigation.indexes
     # - navigation.instant
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
+    # - toc.follow
     # - toc.integrate
   palette:
     - scheme: default
@@ -111,3 +111,15 @@ nav:
     - Anaconda et Miniconda: ressources/conda.md
     - Visual Studio Code: ressources/vscode.md
     - Types en Python: ressources/types.md
+  - Terminale NSI:
+    - Introduction: terminales/index.md
+    - Sujets écrits:
+      - terminales/sujets-ecrits/index.md
+    - Sujets pratiques:
+      - terminales/sujets_pratiques/index.md 
+      - Sujet 1: terminales/sujets_pratiques/sujet1.md    
+      - Sujet 2: terminales/sujets_pratiques/sujet2.md  
+      - Sujet 3: terminales/sujets_pratiques/sujet3.md 
+      - Sujet 4: terminales/sujets_pratiques/sujet4.md  
+      - Sujet 11: terminales/sujets_pratiques/sujet11.md
+      - Sujet 23: terminales/sujets_pratiques/sujet23.md
