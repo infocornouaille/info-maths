@@ -65,7 +65,7 @@ extra_css:
 extra:
   analytics:
     provider: google
-    property: G-338889928
+    property: G-F1835NSKEC
 
 
 plugins:
