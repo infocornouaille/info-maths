@@ -29,3 +29,9 @@ https://info-maths.netlify.app
 ## A ajouter
 
 - annotations
+
+# Update
+
+```
+poetry export -f requirements.txt --output requirements.txt
+```
