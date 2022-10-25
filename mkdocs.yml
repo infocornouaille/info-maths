@@ -1,5 +1,5 @@
 site_name: Info-Maths
-site_url: https://info-maths.vercel.app/
+site_url: https://info-maths.netlify.app/
 site_author: David Couronné
 site_description: >-
   Informatique (NSI - SNT) et Mathématiques au lycée de Cornouaille
@@ -80,6 +80,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - glightbox
+  - social
 
 
 markdown_extensions:
