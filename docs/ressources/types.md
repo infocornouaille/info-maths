@@ -203,7 +203,8 @@ def process_items(items: List[str]):
 ```
 
 !!! tip "Astuce"
-Ces types internes entre crochets sont appelés des "paramètres de type".
+
+    Ces types internes entre crochets sont appelés des "paramètres de type".
 
     Ici, `str` est un paramètre de type passé à `List`.
 
