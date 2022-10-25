@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: 3.x
       - uses: actions/cache@v2
-          with:
+        with:
             key: ${{ github.ref }}
             path: .cache
       - run: sudo apt update
