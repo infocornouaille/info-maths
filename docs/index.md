@@ -1,28 +1,28 @@
-# Welcome to MkDocs
+# Welcome to Info-Maths
 
-Mise à jour
+!!! savoir "À savoir"
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+    :fontawesome-regular-hand-spock: l'informatique c'est sympa :fontawesome-regular-face-laugh-wink:
 
-## Commands
+    :octicons-heart-fill-24:{ .heart }
+    :octicons-heart-fill-24:{ .heart }
+    :octicons-heart-fill-24:{ .heart }
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+!!! done "Les maths c'est sympa aussi :material-ufo-outline:{ .ufo }"
 
-## Project layout
+    En 1735, Leonhard Euler résout le **problème de Bâle** en établissant la formule suivante :
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    $$\sum\limits_{k\in\mathbb N^*} \frac 1 {k^2} = \frac {\pi^2}6$$
 
-!!! note
+    Cependant, il ne démontrera rigoureusement son résultat qu’en 1741.
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+
+```python
+print("Cliquez sur la croix !") # (1)
+```
+
+1.  :man_raising_hand: Je suis un commentaire ! Je peux contenir du  `code`, du texte, des images, ... en gros tout ce qu'on veut :octicons-heart-fill-24:{ .heart }
+
 
 
 ``` py
@@ -38,14 +38,7 @@ def bubble_sort(items):
 ```
 
 
-``` yaml
-theme:
-  features:
-    - content.code.annotate # (1)
-```
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
 
 === "C"
 
@@ -69,6 +62,13 @@ theme:
     }
     ```
 :octicons-heart-fill-24:{ .heart }
+
+
+
+
+
+
+
 
 `Lorem ipsum dolor sit amet`
 
