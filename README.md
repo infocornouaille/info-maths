@@ -24,6 +24,10 @@ conda install poetry
 poetry install
 ```
 
+```bash
+brew install cairo freetype libffi libjpeg libpng zlib
+```
+
 https://info-maths.netlify.app
 
 ## A ajouter
