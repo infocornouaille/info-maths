@@ -62,6 +62,12 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  analytics:
+    provider: google
+    property: G-338889928
+
+
 plugins:
   - search
   - git-revision-date-localized:
