@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Mkdocs
+site
+
 # C extensions
 *.so
 
