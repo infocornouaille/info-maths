@@ -19,5 +19,5 @@ jobs:
       - run: sudo apt update
       - run: sudo apt-get update
       - run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
-      - run: pip install requirements.txt
+      - run: pip install -r requirements.txt
       - run: mkdocs build
