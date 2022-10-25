@@ -17,4 +17,5 @@ jobs:
       - run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
       - run: pip install poetry
       - run: poetry install
+      - run: poetry shell
       - run: mkdocs build
