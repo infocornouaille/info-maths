@@ -115,6 +115,12 @@ nav:
     - Introduction: terminales/index.md
     - Sujets écrits:
       - terminales/sujets-ecrits/index.md
+      - Sujets complets: terminales/sujets-ecrits/02-sujets.md
+      - Sujets structures: terminales/sujets-ecrits/03-structures.md
+      - Sujets SQL: terminales/sujets-ecrits/04-bases-donnees.md
+      - Sujets architecture: terminales/sujets-ecrits/05-architecture.md
+      - Sujets langages: terminales/sujets-ecrits/06-langages.md
+      - Sujets algo: terminales/sujets-ecrits/07-algorithmique.md
     - Sujets pratiques:
       - terminales/sujets_pratiques/index.md 
       - Sujet 1: terminales/sujets_pratiques/sujet1.md    
