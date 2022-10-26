@@ -36,7 +36,7 @@ https://info-maths.netlify.app
 
 # Update
 
-````
+```
 poetry update
 ```
 
