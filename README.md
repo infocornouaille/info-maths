@@ -36,6 +36,10 @@ https://info-maths.netlify.app
 
 # Update
 
+````
+poetry update
+```
+
 ```
 poetry export -f requirements.txt --output requirements.txt
 ```
