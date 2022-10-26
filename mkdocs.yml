@@ -14,7 +14,6 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: fr
-  custom_dir: overrides
   features:
     # - announce.dismiss
     - content.code.annotate
