@@ -143,9 +143,21 @@ nav:
       - Introduction: premiere/algorithmique/introduction.md
       - Parcours séquentiels: premiere/algorithmique/parcours.md
   - Terminale NSI:
-    - Introduction: terminales/index.md
+    - terminales/index.md
+    - POO: terminales/poo.md
+    - Récursivité: terminales/recursivite.md
+    - DM/Projets:
+      - DM1:
+        - terminales/DM/DM1/dm1.md
+        - terminales/DM/DM1/hanoi.md
+        - terminales/DM/DM1/geometrie.md
+        - terminales/DM/DM1/jeu-objet.md
+      - DM2:
+        - terminales/DM/DM2/dm2.md
+
     - Sujets écrits:
       - terminales/sujets-ecrits/index.md
+      
       - Sujets complets: terminales/sujets-ecrits/02-sujets.md
       - Sujets structures: terminales/sujets-ecrits/03-structures.md
       - Sujets SQL: terminales/sujets-ecrits/04-bases-donnees.md
