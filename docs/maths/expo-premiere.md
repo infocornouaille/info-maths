@@ -58,9 +58,9 @@ réciproquement.
 
     Pour tous réels $x$ et $y$, on a :
 
-    -   $exp(-x) \times exp(x)=1 \iff \boxed{exp(-x)=\frac{1}{exp(x)}}$
+    -   $exp(-x) \times exp(x)=1 \iff \boxed{exp(-x)=\dfrac{1}{exp(x)}}$
 
-    -   $\boxed{exp(x-y)=\frac{exp(x)}{exp(y)}}$
+    -   $\boxed{exp(x-y)=\dfrac{exp(x)}{exp(y)}}$
 
     -   $\boxed{(exp(x))^n=exp(nx)}$
 
@@ -83,7 +83,7 @@ rappelle que :
 
 -   $(a^n)^m=a^{nm}$
 
--   $\frac{a^n}{a^m}=a^{n-m}$
+-   $\dfrac{a^n}{a^m}=a^{n-m}$
 
 -   $a^0=1$ et $a^1=a$
 
@@ -101,7 +101,7 @@ suivante :
 
 -   $(e^x)^n=e^{nx}$, avec $n \in \mathbb{N}$
 
--   $\frac{e^x}{e^y}=e^{x-y}$
+-   $\dfrac{e^x}{e^y}=e^{x-y}$
 
 **Remarque : Le nombre $e$**
 
@@ -112,14 +112,14 @@ millième est $2,718$.
 
 Simplifier les écritures suivantes
 
-**1.** $A=\frac{e^{3x} \times (e^x)^5}{e^{x-2}}$
+**1.** $A=\dfrac{e^{3x} \times (e^x)^5}{e^{x-2}}$
 
-**2.** $B=\frac{e \times e^{2x-1}}{2e^{-x+2}}$
+**2.** $B=\dfrac{e \times e^{2x-1}}{2e^{-x+2}}$
 
 **Exercice d'application 2**
 
-Démontrer que pour tout $x \in \mathbb{R}$, on :
-$\frac{1}{1+e^{-x}}=\frac{e^x}{e^x+1}$
+Démontrer que pour tout $x \in \mathbb{R}$, on a:
+$\dfrac{1}{1+e^{-x}}=\dfrac{e^x}{e^x+1}$
 
 ## Lien avec les suites géométriques
 
@@ -134,7 +134,7 @@ de raison $e^a$.
 **Exercice d'application**
 
 Soit $(u_n)$ la suite définie par $u_n=10 \times e^{3n}$ pour tout
-$n \in \mathbb{N}.
+$n \in \mathbb{N}$.
 
 **1.** Calculer $u_0$
 
