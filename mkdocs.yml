@@ -2,7 +2,7 @@ site_name: Info-Maths
 site_url: https://info-maths.netlify.app/
 site_author: David Couronné
 site_description: >-
-  Informatique (NSI - SNT) et Mathématiques au lycée de Cornouaille
+  Cours de NSI et de Mathématiques au lycée de Cornouaille
 
 # Repository
 repo_name: davidcouronne/info-maths
@@ -14,6 +14,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: fr
+  custom_dir: overrides
   features:
     # - announce.dismiss
     - content.code.annotate
@@ -86,12 +87,15 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  - abbr
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tabbed:
@@ -103,14 +107,31 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true    #   et cliquables.
 
 # Page tree
 nav:
   - Accueil: index.md
-  - Ressources:
-    - Anaconda et Miniconda: ressources/conda.md
-    - Visual Studio Code: ressources/vscode.md
-    - Types en Python: ressources/types.md
+  - Première NSI:
+    - premiere/index.md
+    - Les bases de Python:
+      - Principes de base de Python: premiere/bases_de_python/principes.md
+      - Stockage dans des variables: premiere/bases_de_python/variables.md
+      - Les chaînes: premiere/bases_de_python/string.md
+      - Les booléens: premiere/bases_de_python/booleens.md
+      - Les fonctions: premiere/bases_de_python/fonctions.md
+      - Les structures conditionnelles: premiere/bases_de_python/ifelse.md
+    - Représentation des nombres:
+      - Le binaire: premiere/representation/binaire.md
+      - Codage des entiers: premiere/representation/codage_entiers.md
+      - Codage de non entiers: premiere/representation/codage_non_entiers.md
+    - Types construits:
+      - Les listes: premiere/types_construits/listes.md
+      - Les tuple: premiere/types_construits/tuple.md
+      - Les dictionnaires: premiere/types_construits/dictionnaires.md
+    - Algorithmique:
+      - Introduction: premiere/algorithmique/introduction.md
+      - Parcours séquentiels: premiere/algorithmique/parcours.md
   - Terminale NSI:
     - Introduction: terminales/index.md
     - Sujets écrits:
@@ -129,3 +150,8 @@ nav:
       - Sujet 4: terminales/sujets_pratiques/sujet4.md  
       - Sujet 11: terminales/sujets_pratiques/sujet11.md
       - Sujet 23: terminales/sujets_pratiques/sujet23.md
+  - Ressources:
+    - Anaconda et Miniconda: ressources/conda.md
+    - Visual Studio Code: ressources/vscode.md
+    - Types en Python: ressources/types.md
+  
