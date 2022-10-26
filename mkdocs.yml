@@ -89,7 +89,14 @@ markdown_extensions:
   - attr_list
   - abbr
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        
+            
+        
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -150,6 +157,8 @@ nav:
       - Sujet 4: terminales/sujets_pratiques/sujet4.md  
       - Sujet 11: terminales/sujets_pratiques/sujet11.md
       - Sujet 23: terminales/sujets_pratiques/sujet23.md
+  - Mathématiques:
+    - Expontielle Première: maths/expo-premiere.md
   - Ressources:
     - Anaconda et Miniconda: ressources/conda.md
     - Visual Studio Code: ressources/vscode.md
