@@ -6,9 +6,9 @@ Site du [lycée de Cornouaille](https://lycee-de-cornouaille-quimper.ac-rennes.f
 
 Accès direct:
 
-[NSI en première](premiere/index.md){ .md-button .md-button--primary }
+[NSI en première](1_premiere/index.md){ .md-button .md-button--primary }
 
-[NSI en terminale](terminales/index.md){ .md-button .md-button--primary }
+[NSI en terminale](2_terminales/index.md){ .md-button .md-button--primary }
 
 [Spé mathématiques en terminale](maths/expo-premiere.md){ .md-button .md-button--primary }
 
