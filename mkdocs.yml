@@ -120,6 +120,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true    #   et cliquables.
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 # Page tree
 nav:
@@ -156,6 +161,7 @@ nav:
     - terminales/index.md
     - POO: terminales/poo.md
     - Récursivité: terminales/recursivite.md
+    - SQL: terminales/sql.md
     - DM/Projets:
       - DM1:
         - terminales/DM/DM1/dm1.md
