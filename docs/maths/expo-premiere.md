@@ -1,19 +1,12 @@
 ---
 title: Exponentielle - première
 author: [David Couronné]
-date: "2022-10-23"
-subject: "Markdown"
+date: '2022-10-23'
+subject: 'Markdown'
 keywords: [Cours, Rappels]
 ---
 
-
 # Généralités sur la fonction exponentielle
-
-
-
-
-
-
 
 ## Définition
 
@@ -26,8 +19,6 @@ keywords: [Cours, Rappels]
 
     Cette fonction $f$ vérifiant $f'=f$ et $f(0)=1$ est appelée **fonction
     exponentielle**.
-
-
 
 La fonction exponentielle est la fonction, notée $exp$, définie et
 dérivable sur $\mathbb{R}$ telle que:
@@ -47,8 +38,6 @@ $\boxed{exp(0)=1}$ et $\boxed{exp'=exp}$
     est le produit de l'exponentielle de chacun de ces nombres
     .
 
-
-
 **Remarque**
 
 Cette formule permet de transformer les sommes en produits et
@@ -64,14 +53,12 @@ réciproquement.
 
     -   $\boxed{(exp(x))^n=exp(nx)}$
 
-
-
 !!!example "Exemple"
 
     $\left(\exp(1)-\exp(-1)\right)^2=(\exp(1))^2-2\exp(1)\exp(-1)+(\exp(-1))^2$
 
     $=\!\exp(1\!\times\!2)\!-\!2\exp(1\!-\!1)\!+\!\exp(-1\!\times\!2)$
-    
+
     $\!=\!\exp(2)\!-\!2\exp(0)\!+\!\exp(-2)\!=\!\exp(2)\!-\!2\!+\!\exp(-2)$.
 
 ## Notation puissance
@@ -79,13 +66,13 @@ réciproquement.
 Toutes ces propriétés rappellent celles des puissances, en effet, on
 rappelle que :
 
--   $a^n \times a^m = a^{n+m}$
+- $a^n \times a^m = a^{n+m}$
 
--   $(a^n)^m=a^{nm}$
+- $(a^n)^m=a^{nm}$
 
--   $\dfrac{a^n}{a^m}=a^{n-m}$
+- $\dfrac{a^n}{a^m}=a^{n-m}$
 
--   $a^0=1$ et $a^1=a$
+- $a^0=1$ et $a^1=a$
 
 Les propriétés de la fonction $exp$ étant ressemblantes, on décide de
 noter la fonction exponentielle de façon plus simple :
@@ -95,13 +82,13 @@ $exp(x)=e^x$ pour tout $x$
 On écrit alors les propriétés algébriques précédentes de la façon
 suivante :
 
--   $e^0=1$ et $e^1=e$
+- $e^0=1$ et $e^1=e$
 
--   $e^{x+y}=e^x \times e^y$
+- $e^{x+y}=e^x \times e^y$
 
--   $(e^x)^n=e^{nx}$, avec $n \in \mathbb{N}$
+- $(e^x)^n=e^{nx}$, avec $n \in \mathbb{N}$
 
--   $\dfrac{e^x}{e^y}=e^{x-y}$
+- $\dfrac{e^x}{e^y}=e^{x-y}$
 
 **Remarque : Le nombre $e$**
 
@@ -162,8 +149,6 @@ On peut aussi écrire un algorithme de seuil
     print(n)
     ```
 
-
-
 # Étude de la fonction exponentielle
 
 ## La fonction exponentielle
@@ -172,16 +157,12 @@ On peut aussi écrire un algorithme de seuil
 
     Pour tout nombre réel $x$, $\boxed{e^x>0}$
 
-
-
 !!!tip "Propriété"
 
     La fonction exponentielle est dérivable sur $\mathbb{R}$ et
     $\boxed{(e^x)'=e^x}$.
 
     La fonction exponentielle est **strictement croissante sur $\mathbb{R}$**
-
-
 
 **Illustration graphique et tableau de variations**
 
@@ -198,8 +179,6 @@ On peut aussi écrire un algorithme de seuil
 
     $y=f'(0)(x-0)+f(0) \iff y=e^0 \times x+e^0=1 \times x + 1\iff y=x+1$
 
-
-
 ## Résolution d'équations et d'inéquations
 
 De la stricte croissance de la fonction exponentielle, on déduit que :
@@ -211,8 +190,6 @@ De la stricte croissance de la fonction exponentielle, on déduit que :
     -   $\boxed{e^a = e^b \iff a=b}$
 
     -   $\boxed{e^a \leq e^b \iff a \leq b}$
-
-
 
 **METHODE : savoir résoudre des équations et des inéquations avec des
 exponentielles**
@@ -235,9 +212,9 @@ La méthode est analogue pour résoudre une inéquation.
 Déterminer l'ensemble $\mathcal{S}$ des solutions des équations et
 inéquations.
 
-1. $e^{x^2+2x-3} = 1$ 
+1. $e^{x^2+2x-3} = 1$
 2. $2e^{2x}-e^x-1=0$
-3. $e^{\sqrt{3x-5}} <e$ 
+3. $e^{\sqrt{3x-5}} <e$
 4. $\dfrac{e^{2x+1}}{^{x-4}}\geqslant e^{x^2-1}$
 
 # Fonctions définies par $f(x)=e^{-kx}$ et $f(x)=e^{kx}$
@@ -256,8 +233,6 @@ $f(x)=e^{ax+b}$, où $a$ et $b$ sont des entiers relatifs, sont appelées
     -   la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=e^{-ax+b}$ est dérivable
         sur $\mathbb{R}$ et, pour tout réel $x$, $f'(x)=-ae^{-ax+b}$.
 
-
-
 !!!example "Exemple"
 
     La fonction $h$ définie sur $\mathbb{R}$ par $h(x)=-3e^{2x-5}+1$ est dérivable
@@ -272,6 +247,6 @@ $f(x)=e^{ax+b}$, où $a$ et $b$ sont des entiers relatifs, sont appelées
 
 Étudier les variations des fonctions $f$ et $g$ définies sur $\mathbb{R}$ par :
 
--   $f(x)=e^{x+1}+x$
+- $f(x)=e^{x+1}+x$
 
--   $g(x)=e^{-2x+6}$
+- $g(x)=e^{-2x+6}$
