@@ -3,11 +3,13 @@ title: Programmation Orientée Objet
 description: Programmation Orientée Objet en Python
 sidebar_position: 3
 ---
+
 # Programmatiion Orientée Objet
 
 ## Programme officiel
 
 !!!tip "Contenu"
+
     Vocabulaire de la programmation objet :
 
     - classes
@@ -15,19 +17,14 @@ sidebar_position: 3
     - méthodes
     - objets
 
-
-
 !!!tip "Capacités attendues"
 
     - Écrire la définition d’une classe.
     - Accéder aux attributs et méthodes d’une classe.
 
-
-
 !!!note "Commentaire"
+
     On n’aborde pas ici tous les aspects de la programmation objet comme le polymorphisme et l’héritage.
-
-
 
 ## Le paradigme objet
 
@@ -36,9 +33,8 @@ sidebar_position: 3
     - Un programme est un ensemble d’objets
     - La seule façon d’interagir avec un objet est d’appeler l’une de ses méthodes
 
-
-
 !!!savoir "Objets"
+
     Un objet regroupe :
 
     - des **attributs** (contenant des valeurs)
@@ -46,12 +42,10 @@ sidebar_position: 3
 
     Un objet est un élément issu d'une classe. On parle aussi d'**instance** de la classe.
 
-
-
 !!!tip "Classes"
+
     Les classes sont des " moules " permettant de produire des objets en
     série. On produit un objet en appelant le constructeur de la classe.
-
 
 ## Impératif et objet
 
@@ -68,8 +62,6 @@ sidebar_position: 3
     print(somme(l))
     ```
 
-
-
 !!!example "Objet (Python)"
 
     ```python
@@ -81,7 +73,7 @@ sidebar_position: 3
 
         def ajouter(self, elt): # (3)
             self.v.append(elt)
-        def somme(self): 
+        def somme(self):
             s = 0
             for e in self.valeur:
                 s = s + e
@@ -90,8 +82,8 @@ sidebar_position: 3
     #Utilisation de la classe
     l = listeEntier() # (4)
     l.ajouter(1)     # (5)
-    l.ajouter(2)     
-    l.ajouter(3)     
+    l.ajouter(2)
+    l.ajouter(3)
     print(l.somme())
     ```
 
@@ -99,9 +91,7 @@ sidebar_position: 3
     2. Un **attribut**
     3. Une **méthode**
     4. `l`est une **instance** de la classe `listeEntier`
-    5. Appel de la méthode ajout 
-
-
+    5. Appel de la méthode ajout
 
 ## Quand a-t-on besoin de la programmation objet ?
 
@@ -112,7 +102,7 @@ sidebar_position: 3
 
 ## Avantages de le programmation objet
 
-!!!info "Encapsulation" 
+!!!info "Encapsulation"
 
     **Encapsulation**: pour une meilleure structuration du code.
 
@@ -141,8 +131,6 @@ sidebar_position: 3
     self.__attribut2 # Privé
     ```
 
-
-
 !!!info "Typage (typage dynamique en Python)"
 
     A l’exécution, on peut distinguer des objets produits par différentes classes.
@@ -158,11 +146,6 @@ sidebar_position: 3
     A = Point(2, 3)
     print(type(A)) # <class '__main__.Point'>
     ```
-
-
-
-
-
 
 ## Liens
 
