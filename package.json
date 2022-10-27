@@ -1,14 +1,14 @@
 {
   "name": "info-maths",
   "version": "1.0.0",
-  "description": "https://medium.com/swlh/publish-a-static-website-in-a-day-with-mkdocs-and-netlify-3cc076d0efaf",
+  "description": "Site des cours de NSI et de spécialité Mathématiques du lycée de Cornouaille",
   "main": "prettier.config.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"**/*.{js,jsx,tsx,json,md,mdx,css}\""
+    "format": "prettier --write \"**/*.{js,jsx,tsx,json,md,mdx,css,yml,scss}\""
   },
   "repository": {
     "type": "git",
