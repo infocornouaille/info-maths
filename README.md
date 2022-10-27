@@ -1,6 +1,6 @@
 # info-maths
 
-https://medium.com/swlh/publish-a-static-website-in-a-day-with-mkdocs-and-netlify-3cc076d0efaf
+Site des cours de NSI et de spécialité Mathématiques du lycée de Cornouaille
 
 ## install
 
