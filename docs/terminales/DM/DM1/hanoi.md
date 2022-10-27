@@ -51,9 +51,9 @@ Pour déplacer une tour de $n$ disques de tour 1 vers tour 3, on effectue ces tr
 - déplacer la tour des $n-1$ premiers disques de tour 2 vers tour 3
   ![lp2_hanoi_initial.png](./hanoi/lp2_hanoi_etape3.png)
 
-:::tip Astuce
-L'astuce ici est de créer une fonction hanoi qui prend 4 paramètres : `hanoi(n,debut,inter,fin)` où `n` est le nombre de disques à déplacer, `debut` est la tour de départ de nos $n$ disques, `inter` est la tour intermédiaire que l'on peut utiliser pour déplacer et `fin` est la tour ou doivent se trouver les $n$ disques au final.
-:::
+!!!tip "Astuce"
+
+    L'astuce ici est de créer une fonction hanoi qui prend 4 paramètres : `hanoi(n,debut,inter,fin)` où `n` est le nombre de disques à déplacer, `debut` est la tour de départ de nos $n$ disques, `inter` est la tour intermédiaire que l'on peut utiliser pour déplacer et `fin` est la tour ou doivent se trouver les $n$ disques au final.
 
 ## Consignes
 
