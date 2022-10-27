@@ -203,10 +203,10 @@ class Cellule :
         page actuelle : lemonde.fr
         >>> n.visite('google.fr')
         page actuelle : google.fr
-        >>> n.visite('lyceemauriac.fr')
-        page actuelle : lyceemauriac.fr
+        >>> n.visite('netflix.fr')
+        page actuelle : netflix.fr
         >>> n.back()
-        page quittée : lyceemauriac.fr
+        page quittée : netflix.fr
         >>> n.back()
         page quittée : google.fr
         ```
