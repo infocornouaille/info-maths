@@ -1,0 +1,4 @@
+{
+  "\\RR": "\\mathbb{R}",
+  "\\vect": "{\\begin{pmatrix}#1\\\\#2\\end{pmatrix}}"
+}
