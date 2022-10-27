@@ -11,8 +11,6 @@ description: Programme de NSI pour le Bac 2022-2023
 
     Lors de l'épreuve terminale dans l'enseignement de spécialité numérique et sciences informatiques, les candidats peuvent être évalués sur les parties suivantes du programme de la classe de terminale :
 
-
-
 ## « Structures de données »
 
 - Structures de données, interface et implémentation
