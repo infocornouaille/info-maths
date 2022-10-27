@@ -1,8 +1,8 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 jobs:
   deploy:
@@ -14,8 +14,8 @@ jobs:
           python-version: 3.x
       - uses: actions/cache@v2
         with:
-            key: ${{ github.ref }}
-            path: .cache
+          key: ${{ github.ref }}
+          path: .cache
       - run: sudo apt update
       - run: sudo apt-get update
       - run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
