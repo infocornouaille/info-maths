@@ -18,7 +18,6 @@ On suppose ici que Anaconda ou Miniconda est installé.
 conda env list
 ```
 
-
 ## Créer un nouvel environnement
 
 ```bash
