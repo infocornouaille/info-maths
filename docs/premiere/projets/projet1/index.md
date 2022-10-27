@@ -120,4 +120,3 @@ eau
 !!!danger
 
     La liste course doit être enregistrée dans le fichier `liste_courses.txt`
-
