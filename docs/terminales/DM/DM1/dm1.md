@@ -26,7 +26,6 @@ Le troisième exercice porte sur la programmation objet et la programmation en g
 
     A voir ici par exemple: https://www.youtube.com/watch?v=6HylLLHihA0
 
-
 ## Exercice Tours de Hanoi
 
 L'énoncé se trouve ici: [Tours de Hanoi](hanoi.md)
@@ -34,6 +33,7 @@ L'énoncé se trouve ici: [Tours de Hanoi](hanoi.md)
 ## Exercice géométrie objet
 
 L'énoncé se trouve ici: [Géométrie objet](geometrie.md)
-## Exercice jeu objet 
+
+## Exercice jeu objet
 
 L'énoncé se trouve ici: [Jeu objet](jeu-objet.md)
