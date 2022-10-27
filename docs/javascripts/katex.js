@@ -1,16 +1,18 @@
-;(function () {
+;(() => {
   'use strict'
 
+  // macros personnalisées
   const macros = {
     '\\RR': '\\mathbb{R}',
     '\\vect': '{\\begin{pmatrix}#1\\\\#2\\end{pmatrix}}',
   }
 
-  var katexMath = function () {
-    var maths = document.querySelectorAll('.arithmatex'),
+  // rendu katex
+  function katexMath() {
+    let maths = document.querySelectorAll('.arithmatex'),
       tex
 
-    for (var i = 0; i < maths.length; i++) {
+    for (let i = 0; i < maths.length; i++) {
       tex = maths[i].textContent || maths[i].innerText
       if (tex.startsWith('\\(') && tex.endsWith('\\)')) {
         katex.render(tex.slice(2, -2), maths[i], {
@@ -19,13 +21,16 @@
           throwOnError: false,
         })
       } else if (tex.startsWith('\\[') && tex.endsWith('\\]')) {
-        katex.render(tex.slice(2, -2), maths[i], { displayMode: true, macros, throwOnError: false })
+        katex.render(tex.slice(2, -2), maths[i], {
+          displayMode: true,
+          macros,
+          throwOnError: false,
+        })
       }
     }
   }
-
-  ;(function () {
-    var onReady = function onReady(fn) {
+  ;(() => {
+    function onReady(fn) {
       if (document.addEventListener) {
         document.addEventListener('DOMContentLoaded', fn)
       } else {
@@ -37,7 +42,7 @@
       }
     }
 
-    onReady(function () {
+    onReady(() => {
       if (typeof katex !== 'undefined') {
         katexMath()
       }
