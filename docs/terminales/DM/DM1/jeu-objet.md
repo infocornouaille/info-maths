@@ -8,7 +8,6 @@ sidebar_position: 4
 
     Vous faites partie d'une société qui crée des jeux vidéo. Dans le projet d'un nouveau jeu, vous devez gérer les personnages. Afin d'éviter tout conflit dans le code produit par les autres collaborateurs, vous écrivez votre code en utilisant le paradigme de programmation objet.
 
-
 ## Démarrage
 
 Créer un fichier `jeuObjet.py`et y coller le code suivant:
@@ -79,7 +78,6 @@ Pour l'interface graphique, le niveau d'expérience doit être accessible mais l
 
     Par convention, un accesseur commence par le verbe anglais get (to get = obtenir = récupérer).
 
-
 - vous devez rendre privé l'attribut `experience`de la classe `Personnage`
 - écrivez une méthode `get_experience`qui permet de récupérer le niveau d'expérience (mais pas de modifier ce niveau)
 
@@ -99,8 +97,7 @@ Lors du jeu, le niveau d'expérience du personnage doit évoluer : cette expéri
 Pour pouvoir modifier la valeur de l'attribut d'un objet, on créé dans la classe une méthode appelée **mutateur**.
 
 !!!info
-    Par convention, un mutateur commence par le verbe anglais set (to set = modifier).
-
+Par convention, un mutateur commence par le verbe anglais set (to set = modifier).
 
 - Dans la classe `Personnage`, écrivez le **mutateur** `set_experience` qui permet de modifier l'expérience.
 
@@ -282,11 +279,10 @@ liste_outils = [Outil("faux", 0.9, 50, 2), Outil("petite haltère", 2, 0, 1)]
 ```
 
 !!!info
-    Votre liste d'outils doit contenir au moins 5 "outils". Vous pouvez y mettre ce que vous voulez (épées, boucliers, ordinateur...). Vous n'êtes pas non plus contraints d'utiliser les outils "faux" et "petite haltère", c'était juste des exemples.
-
+Votre liste d'outils doit contenir au moins 5 "outils". Vous pouvez y mettre ce que vous voulez (épées, boucliers, ordinateur...). Vous n'êtes pas non plus contraints d'utiliser les outils "faux" et "petite haltère", c'était juste des exemples.
 
 !!!info
-    Pour prendre au hasard un élément dans une liste, le module `random` nous offre aussi des fonctions sur les listes.
+Pour prendre au hasard un élément dans une liste, le module `random` nous offre aussi des fonctions sur les listes.
 
 Par exemple
 
@@ -296,7 +292,6 @@ ma_liste = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 # Obtenir un élément au hasard
 un_element = choice(ma_liste)
 ```
-
 
 Un exemple de séquence de jeu:
 
