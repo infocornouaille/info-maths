@@ -13,11 +13,9 @@ Vous avez deux fichiers à rendre, dans un dossier compressé:
 
 !!!danger "Qualité du code"
 
-	Vous aurez des tests avec des `assert`à écrire dans chacun des deux exercices.
+    Vous aurez des tests avec des `assert`à écrire dans chacun des deux exercices.
 
-	La qualité des **tests** écrits sera prise en compte dans l'évaluation, ainsi que la qualité des **docstring** et des **commentaires**.
-
-
+    La qualité des **tests** écrits sera prise en compte dans l'évaluation, ainsi que la qualité des **docstring** et des **commentaires**.
 
 ## Mini-jeu
 
@@ -30,15 +28,14 @@ On demande pour cet exercice d'implémenter plusieurs classes qui pourront inter
 
 !!!tip "Ecrire des tests"
 
-	Vous commencerez à écrire des tests la fin de votre fichier avec des `assert`. Par exemple:
+    Vous commencerez à écrire des tests la fin de votre fichier avec des `assert`. Par exemple:
 
-	```python
-	aragorn = Personnage("Aragorn", 120)
-	assert(aragorn.get_nom() == 'Aragorn'), "l'accesseur ne renvoie pas le bon nom"
-	```
+    ```python
+    aragorn = Personnage("Aragorn", 120)
+    assert(aragorn.get_nom() == 'Aragorn'), "l'accesseur ne renvoie pas le bon nom"
+    ```
 
-	Vous devez tester au moins tous les accesseurs.
-
+    Vous devez tester au moins tous les accesseurs.
 
 5. Créer une classe `Arme` ayant pour attributs `__nom`, `__degats_min` et `__degats_max`, ces derniers étant des entiers naturels (dans le bon ordre évidemment).
 
@@ -49,11 +46,9 @@ Les méthodes à implémenter sont:
 
 !!!tip "Tests"
 
-	Vous devez écrire des tests pour les accesseurs.
+    Vous devez écrire des tests pour les accesseurs.
 
-	Pour `degat_aleat(self)`, on testera que le nombre renvoyé est bien dans l'intervalle des dégâts de l'arme.
-
-
+    Pour `degat_aleat(self)`, on testera que le nombre renvoyé est bien dans l'intervalle des dégâts de l'arme.
 
 6. Créer classe `Arbitre` ayant pour attributs deux personnages armés `__perso1` et `__perso2`.
 
@@ -80,13 +75,11 @@ Ograukh inflige 5 points de dégâts à Aragorn avec sa hache de guerre.
 
 !!!info
 
-	Il faudra peut-être aussi modifier les classes `Personnage` et `Arme`, pour y ajouter éventuellement des attributs et des méthodes...
+    Il faudra peut-être aussi modifier les classes `Personnage` et `Arme`, pour y ajouter éventuellement des attributs et des méthodes...
 
-	On pensera à ajouter les test supplémentaires.
+    On pensera à ajouter les test supplémentaires.
 
-	On ne testera pas la classe `Arbitre`: les tests des sorties console sont tout à fait possibles, mais hors programme !
-
-
+    On ne testera pas la classe `Arbitre`: les tests des sorties console sont tout à fait possibles, mais hors programme !
 
 - `combat(self)` qui simulera un combat complet, c'est-à-dire une alternance de rounds jusqu'à ce que l'un des personnage perde la vie.
 
@@ -149,19 +142,15 @@ un nombre sur la pile, qui est le résultat.
 
 !!!info "A faire"
 
-	- Ecrire une fonction `eval_polonaise_inverse(expression)` prenant en paramètre une chaîne de caractères représentant une expression en notation polonaise inverse composée **d'additions** et de **multiplications** de nombres entiers et renvoyant la valeur de cette expression.
+    - Ecrire une fonction `eval_polonaise_inverse(expression)` prenant en paramètre une chaîne de caractères représentant une expression en notation polonaise inverse composée **d'additions** et de **multiplications** de nombres entiers et renvoyant la valeur de cette expression.
 
-	On supposera que les éléments de l'expression sont séparés par des espaces. (penser à `split` !)
+    On supposera que les éléments de l'expression sont séparés par des espaces. (penser à `split` !)
 
-	- Ecrire des tests avec des `assert` à la fin du fichier.
-
-
+    - Ecrire des tests avec des `assert` à la fin du fichier.
 
 !!!danger "Attention"
 
-	Cette fonction ne doit pas renvoyer de résultat si l'expression est mal écrite.
-
-
+    Cette fonction ne doit pas renvoyer de résultat si l'expression est mal écrite.
 
 Exemples:
 
@@ -202,8 +191,6 @@ class Pile:
 
 !!!danger "Attention"
 
-	Les classes `Cellule` et `Pile` sont livrées volontairement sans **docstring**.
+    Les classes `Cellule` et `Pile` sont livrées volontairement sans **docstring**.
 
-	Vous devez **impérativement** écrire les **docstring** pour le rendu final.
-
-
+    Vous devez **impérativement** écrire les **docstring** pour le rendu final.
