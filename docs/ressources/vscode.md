@@ -50,5 +50,3 @@ Installez Black dans votre environnement:
         a = 2
         a = 5 + 3
         ```
-
-
