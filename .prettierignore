@@ -1,3 +1,4 @@
 site
 build
 package-lock.json
+.pages
