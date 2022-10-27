@@ -48,11 +48,11 @@ description: Bases de données et SQL en spécialité NSI
 
 	Prenons l'exemple suivant :
 		
-	| Nom        | Prénom    | Naissance |
-    |--------------|-----------|------------|
-    | Pascal |Blaise     | 1623      |
-    | Lovelace      | Ada  | 1815      |
-    | Boole      |  George  | 1815      |
+    | Nom      | Prénom | Naissance |
+    | -------- | ------ | --------- |
+    | Pascal   | Blaise | 1623      |
+    | Lovelace | Ada    | 1815      |
+    | Boole    | George | 1815      |
 
 
 		
@@ -110,11 +110,11 @@ description: Bases de données et SQL en spécialité NSI
     FROM personne;
     ```
 
-    | Nom           | Naissance |
-    |------------|------------|
-    | Pascal     | 1623      |
-    | Lovelace      | 1815      |
-    | Boole       | 1815      |
+    | Nom      | Naissance |
+    | -------- | --------- |
+    | Pascal   | 1623      |
+    | Lovelace | 1815      |
+    | Boole    | 1815      |
 		
 
 ### WHERE
