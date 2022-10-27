@@ -85,8 +85,6 @@ Addition binaire:
 
     Le nombre $-13$ s'écrit donc `11110011`.
 
-
-
 ## Travail inverse : passage du binaire signé au nombre relatif
 
 Ce sont les même méthodes.
@@ -112,5 +110,3 @@ Si le bit fort (le plus à gauche) est un 1, notre nombre est négatif et il fau
     1. $11110001$ devient $00001110$ puis on ajoute 1 $00001111$ qui donne 15 et donc $-15$
     2. Le plus grand nombre est `01111111`, soit $+127$.
     3. Le nombre minimal est $-128$.
-
-
