@@ -7,15 +7,15 @@ description: Comment ajouter katex à mkdocs
 
 ## Le code
 
-=== "javascripts/katex.js"
+=== "docs/javascripts/katex.js"
 
-    ```js
+    ```js title="docs/javascripts/katex.js"
     --8<-- "docs/javascripts/katex.js"
     ```
 
 === "mkdocs.yml"
 
-    ```yaml
+    ```yaml title="mkdocs.yml"
     extra_javascript:
         - javascripts/katex.js
         - https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js
@@ -33,7 +33,7 @@ description: Comment ajouter katex à mkdocs
 
     === "katex.js"
 
-        ```js title="javascripts/katex.js" hl_lines="3 4 5 6"
+        ```js title="docs/javascripts/katex.js" hl_lines="3 4 5 6"
         (function () {
             'use strict';
             const macros = {
