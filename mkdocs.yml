@@ -55,15 +55,15 @@ theme:
     logo: logo
 
 extra_javascript:
-  - javascripts/mathjax.js
-  #- javascripts/katex.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  #- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
+  #- javascripts/mathjax.js # mathjax
+  #- https://polyfill.io/v3/polyfill.min.js?features=es6 # mathjax
+  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #mathjax
+  - javascripts/katex.js # katex
+  - https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js #katex
 
 extra_css:
   - stylesheets/extra.css
-  #- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"
+  - https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css
 
 
 extra:
