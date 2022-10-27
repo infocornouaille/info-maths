@@ -156,6 +156,11 @@ nav:
       - POO: terminales/poo.md
       - Récursivité: terminales/recursivite.md
       - SQL: terminales/sql.md
+      - Structures de Données:
+          - terminales/Structures_de_donnees/index.md
+          - Listes chaînées: terminales/Structures_de_donnees/listes-chainees.md
+          - terminales/Structures_de_donnees/piles.md
+          - terminales/Structures_de_donnees/files.md
       - DM/Projets:
           - DM1:
               - terminales/DM/DM1/dm1.md
