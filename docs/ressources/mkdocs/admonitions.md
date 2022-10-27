@@ -113,9 +113,120 @@ description: Admonitions avec Mkdocs Material
 
     ??? question "Code"
 
+        Crédit: [https://ens-fr.gitlab.io/mkdocs/recettes_2/#creer-ses-propres-admonitions](https://ens-fr.gitlab.io/mkdocs/recettes_2/#creer-ses-propres-admonitions)
+
         ```css
         --8<-- "includes/admonition_savoir.css"
         ```
         
+[`interrogation`](#type:interrogation){ #type:interrogation }
+:   !!! interrogation
 
 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_interrogation.scss"
+        ```
+
+[`exercice`](#type:exercice){ #type:exercice }
+:   !!! exercice
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_exercice.scss"
+        ```
+
+[`lien`](#type:lien){ #type:lien }
+:   !!! lien
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_lien.scss"
+        ```
+
+[`maison`](#type:maison){ #type:maison }
+:   !!! maison
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_maison.scss"
+        ```
+
+[`rappel`](#type:rappel){ #type:rappel }
+:   !!! rappel
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_rappel.scss"
+        ```
+
+[`retenir`](#type:retenir){ #type:retenir }
+:   !!! retenir
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_retenir.scss"
+        ```
+
+[`aide`](#type:aide){ #type:aide }
+:   !!! aide
+
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ??? question "Code"
+
+        Crédit: [https://fabricenativel.github.io](https://fabricenativel.github.io)
+
+        ```css
+        --8<-- "docs/stylesheets/_admonition_aide.scss"
+        ```
