@@ -2,24 +2,19 @@
 print("Cliquez sur la croix !") # (1)
 ```
 
-1.  :man_raising_hand: Je suis un commentaire ! Je peux contenir du  `code`, du texte, des images, ... en gros tout ce qu'on veut :octicons-heart-fill-24:{ .heart }
+1.  :man_raising_hand: Je suis un commentaire ! Je peux contenir du `code`, du texte, des images, ... en gros tout ce qu'on veut :octicons-heart-fill-24:{ .heart }
 
-
-
-``` py
+```py
 import tensorflow as tf
 ```
 
-``` py title="bubble_sort.py"
+```py title="bubble_sort.py"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
             if items[j] > items[j + 1]:
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
-
-
-
 
 === "C"
 
@@ -42,24 +37,18 @@ def bubble_sort(items):
       return 0;
     }
     ```
+
 :octicons-heart-fill-24:{ .heart }
-
-
-
-
-
-
-
 
 `Lorem ipsum dolor sit amet`
 
-:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-    tellus non sem sollicitudin, quis rutrum leo facilisis.
+: Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+tellus non sem sollicitudin, quis rutrum leo facilisis.
 
 `Cras arcu libero`
 
-:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
-    ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+: Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
 
     Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
     Nam vulputate tincidunt fringilla.
