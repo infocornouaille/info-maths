@@ -8,6 +8,8 @@ site_description: >-
 repo_name: davidcouronne/info-maths
 repo_url: https://github.com/davidcouronne/info-maths
 edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2021 - 2022 David Couronné
+
 
 
 # Configuration
@@ -187,4 +189,7 @@ nav:
     - Anaconda et Miniconda: ressources/conda.md
     - Visual Studio Code: ressources/vscode.md
     - Types en Python: ressources/types.md
+    - mkdocs:
+      - Admonitions: ressources/mkdocs/admonitions.md
+      - Katex: ressources/mkdocs/katex.md
   
