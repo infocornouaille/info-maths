@@ -69,7 +69,7 @@ extra_css:
 extra:
   analytics:
     provider: google
-    property: G-RWG1VRBX8Z
+    property: G-F1835NSKEC
   consent:
     title: Les Cookies
     description: >- 
