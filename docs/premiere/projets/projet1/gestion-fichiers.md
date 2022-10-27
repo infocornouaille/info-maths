@@ -34,11 +34,9 @@ Le répertoire courant devrait maintenant contenir aussi un fichier « fichier.t
 
         Une fois le fichier ouvert, il est possible d'écrire dedans (à l'aide de `write`) ou de lire son contenu (à l'aide de `read`).
 
-
 !!!info "with"
 
         Nous utilisons ici une structure particulière que nous n'avons encore jamais rencontrée : le "with". Ce "with" indique que nous allons utiliser un "context manager". Pour le moment, vous avez juste besoin de savoir que son utilisation permet de manipuler des fichiers externes "proprement".
-
 
 Étudiez et testez le programme suivant :
 
@@ -72,8 +70,6 @@ Ouvrez le fichier `fichier.txt`. Le contenu ne devrait pas être très joli... l
         print('hello \n world')
         ```
 
-
-
 Nous pouvons donc modifier notre script:
 
 ```python
@@ -96,4 +92,3 @@ with open('fichier.txt','r') as f :
 !!!info "replace"
 
         `ligne.replace("\n","")` permet d'enlever la suite de caractères `\n`, car même si `\n` n'est pas visible dans le fichier texte, elle est tout de même présente.
-
