@@ -5,7 +5,7 @@ description: Sujet 23 épreuve pratique Numérique et Science Informatique 2022
 
 # Sujet NSI 2022 - 23
 
-## Exercice 1 
+## Exercice 1
 
 === "Sujet"
 
@@ -30,7 +30,7 @@ description: Sujet 23 épreuve pratique Numérique et Science Informatique 2022
     ('Alan', 222)
     ```
 
-## Exercice 2 
+## Exercice 2
 
 === "Sujet"
 
