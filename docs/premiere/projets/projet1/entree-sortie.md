@@ -10,7 +10,6 @@ sidebar_position: 2
 
     l'instruction `input` va permettre aux utilisateurs de saisir des données au clavier.
 
-
 Testez ce programme:
 
 ```python
@@ -24,7 +23,6 @@ Quel est le type de la valeur référencée par la variable age ?
 !!!info
 
     Comme vous avez pu le constater, la valeur saisie par l'utilisateur sera toujours de type `str`.
-
 
 Testez ce programme:
 
@@ -125,7 +123,6 @@ print(f"Bonjour {nom} !")
 !!!info "formatage"
 
     Pour formater un texte, vous devez mettre un `f`avant les guillements, puis mettre les expressions à évaluer entre accolades.
-
 
 ```python
 nom = input("Quel est votre nom ? ")
