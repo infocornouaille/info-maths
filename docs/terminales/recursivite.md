@@ -3,6 +3,7 @@ title: Récursivité
 description: fonctions récursives
 sidebar_position: 1
 ---
+
 # Récursivité
 
 ## Programme officiel
@@ -12,27 +13,23 @@ sidebar_position: 1
     - Écrire un programme récursif.
     - Analyser le fonctionnement d'un programme récursif.
 
-
-
 ## Principe récursif
 
 Pour résoudre un problème, on se ramène à la résolution d'un problème similaire mais moins complexe, jusqu'à l'obtention d'un problème élémentaire.
 
 Les différents problèmes intermédiaires sont stockés dans une pile que l'on dépilera
 
-!!!info "Un peu d'histoire"
-    Les premiers langages de programmation qui ont autorisé l'emploi de la récursivité sont LISP, développé à partir de 1958, et Algol 60 (à partir de 1960). Depuis, tous les langages de programmation généraux réalisent une implémentation de la récursivité.
+!!!abstract "Un peu d'histoire"
 
+    Les premiers langages de programmation qui ont autorisé l'emploi de la récursivité sont LISP, développé à partir de 1958, et Algol 60 (à partir de 1960). Depuis, tous les langages de programmation généraux réalisent une implémentation de la récursivité.
 
 !!!savoir "Définition"
 
     On qualifie de récursive toute fonction qui s'appelle elle-même.
 
-
 !!!info "Condition d'arrêt"
 
     Dans toute fonction récursive, il est nécessaire d'avoir une condition d'arrêt ; on parle aussi de condition de terminaison.
-
 
 !!!example "Exemple"
 
@@ -48,20 +45,17 @@ Les différents problèmes intermédiaires sont stockés dans une pile que l'on 
 
     - Cette condition correspond aussi au cas "simple" où $x^0=1$ : on connaît le résultat à faire renvoyer par la fonction : 1.
 
-
-
 !!!tip "Terminaison"
 
     Pour s'assurer de la terminaison d'un algorithme récursif, il suffit d'identifier une suite strictement décroissante d'entiers positifs ou nuls.
 
     Identifier une suite strictement décroissante d'entiers positifs ou nuls permet de prouver qu'un algorithme récursif se termine en un nombre d'appels fini. Si cette suite commence à $n$, il y aura au maximum $n$ appels récursifs.
 
-
 ## Récursivité simple
 
 !!!info "Récursivité simple"
-    Un appel récursif est dit simple si la fonction ne contient qu'un seul appel récursif à elle-même.
 
+    Un appel récursif est dit simple si la fonction ne contient qu'un seul appel récursif à elle-même.
 
 !!!savoir "Fonction factorielle"
 
@@ -84,14 +78,11 @@ Les différents problèmes intermédiaires sont stockés dans une pile que l'on 
             return n * factorielle(n-1)
     ```
 
-
-
 ## Récursivité imbriquée
 
 !!!info "récursivité imbriquée"
 
     Un appel récursif est dit imbriqué si l'appel récursif a comme argument un autre appel récursif à la même fonction.
-
 
 !!!example "fonction de MacCarthy"
 
@@ -114,15 +105,11 @@ Les différents problèmes intermédiaires sont stockés dans une pile que l'on 
             return carthy(carthy(n+11))
     ```
 
-
-
 ## Récursivité multiple
 
 !!!info "récursivité multiple"
 
     Un appel récursif est dit multiple si la fonction contient plusieurs appels récursifs à elle-même.
-
-
 
 !!!savoir "Suite de Fibonacci"
 
@@ -146,14 +133,11 @@ Les différents problèmes intermédiaires sont stockés dans une pile que l'on 
             return fibonacci(n-1) + fibonacci(n-2)
     ```
 
-
-
 ## Récursivité croisée
 
 !!!info "récursivité croisée"
 
     Un appel récursif est dit croisé si 2 fonctions récursives s'appellent mutuellement.
-
 
 !!!example "Fonctions pairs et impairs"
 
@@ -191,8 +175,6 @@ Les différents problèmes intermédiaires sont stockés dans une pile que l'on 
             return pair(n-1)
     ```
 
-
-
 ## Démontrons que 2+2=4
 
 Dans l'ensemble des entiers naturels 0, 1, 2, 3, ... on peut définir le successeur d'un nombre de la façon suivante:
@@ -209,8 +191,6 @@ La définition de l'addition est alors:
 
     - $n+0=n$
     - pour tout $m$ entier naturel, $n+m'=(n+m)'$
-
-
 
 Par conséquent, pour monter que $2+2=4$:
 
