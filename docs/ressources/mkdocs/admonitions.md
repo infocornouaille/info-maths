@@ -7,7 +7,7 @@ description: Admonitions avec Mkdocs Material
 
 [`note`](#type:note){ #type:note }
 
-:   !!! note
+: !!! note
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -15,7 +15,7 @@ description: Admonitions avec Mkdocs Material
 
 [`abstract`](#type:abstract){ #type:abstract }
 
-:   !!! abstract
+: !!! abstract
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -23,7 +23,7 @@ description: Admonitions avec Mkdocs Material
 
 [`info`](#type:info){ #type:info }
 
-:   !!! info
+: !!! info
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -31,7 +31,7 @@ description: Admonitions avec Mkdocs Material
 
 [`tip`](#type:tip){ #type:tip }
 
-:   !!! tip
+: !!! tip
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -39,7 +39,7 @@ description: Admonitions avec Mkdocs Material
 
 [`success`](#type:success){ #type:success }
 
-:   !!! success
+: !!! success
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -47,7 +47,7 @@ description: Admonitions avec Mkdocs Material
 
 [`question`](#type:question){ #type:question }
 
-:   !!! question
+: !!! question
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -55,7 +55,7 @@ description: Admonitions avec Mkdocs Material
 
 [`warning`](#type:warning){ #type:warning }
 
-:   !!! warning
+: !!! warning
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -63,7 +63,7 @@ description: Admonitions avec Mkdocs Material
 
 [`failure`](#type:failure){ #type:failure }
 
-:   !!! failure
+: !!! failure
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -71,7 +71,7 @@ description: Admonitions avec Mkdocs Material
 
 [`danger`](#type:danger){ #type:danger }
 
-:   !!! danger
+: !!! danger
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -79,7 +79,7 @@ description: Admonitions avec Mkdocs Material
 
 [`bug`](#type:bug){ #type:bug }
 
-:   !!! bug
+: !!! bug
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -87,7 +87,7 @@ description: Admonitions avec Mkdocs Material
 
 [`example`](#type:example){ #type:example }
 
-:   !!! example
+: !!! example
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -95,7 +95,7 @@ description: Admonitions avec Mkdocs Material
 
 [`quote`](#type:quote){ #type:quote }
 
-:   !!! quote
+: !!! quote
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -105,7 +105,7 @@ description: Admonitions avec Mkdocs Material
 
 [`savoir`](#type:savoir){ #type:savoir }
 
-:   !!! savoir
+: !!! savoir
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -118,10 +118,9 @@ description: Admonitions avec Mkdocs Material
         ```css
         --8<-- "includes/admonition_savoir.css"
         ```
-        
-[`interrogation`](#type:interrogation){ #type:interrogation }
-:   !!! interrogation
 
+[`interrogation`](#type:interrogation){ #type:interrogation }
+: !!! interrogation
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -136,8 +135,7 @@ description: Admonitions avec Mkdocs Material
         ```
 
 [`exercice`](#type:exercice){ #type:exercice }
-:   !!! exercice
-
+: !!! exercice
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -152,8 +150,7 @@ description: Admonitions avec Mkdocs Material
         ```
 
 [`lien`](#type:lien){ #type:lien }
-:   !!! lien
-
+: !!! lien
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -168,8 +165,7 @@ description: Admonitions avec Mkdocs Material
         ```
 
 [`maison`](#type:maison){ #type:maison }
-:   !!! maison
-
+: !!! maison
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -184,8 +180,7 @@ description: Admonitions avec Mkdocs Material
         ```
 
 [`rappel`](#type:rappel){ #type:rappel }
-:   !!! rappel
-
+: !!! rappel
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -200,8 +195,7 @@ description: Admonitions avec Mkdocs Material
         ```
 
 [`retenir`](#type:retenir){ #type:retenir }
-:   !!! retenir
-
+: !!! retenir
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -216,8 +210,7 @@ description: Admonitions avec Mkdocs Material
         ```
 
 [`aide`](#type:aide){ #type:aide }
-:   !!! aide
-
+: !!! aide
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
