@@ -1,18 +1,18 @@
-hide: - navigation  in index.md
+hide: - navigation in index.md
 
 # Welcome to Info-Maths
 
-Site du [lycée de Cornouaille](https://lycee-de-cornouaille-quimper.ac-rennes.fr){target=_blank} ([académie de Rennes](https://www.ac-rennes.fr){target=_blank}) pour l’enseignement de la spécialité NSI et de Mathématiques. 
+Site du [lycée de Cornouaille](https://lycee-de-cornouaille-quimper.ac-rennes.fr){target=\_blank} ([académie de Rennes](https://www.ac-rennes.fr){target=\_blank}) pour l’enseignement de la spécialité NSI et de Mathématiques.
 
 Accès direct:
 
-[NSI en première](premiere/index.md){.md-button} 
+[NSI en première](premiere/index.md){ .md-button .md-button--primary }
 
-[NSI en terminale](terminales/index.md){.md-button} 
+[NSI en terminale](terminales/index.md){ .md-button .md-button--primary }
 
-[Spé mathématiques en terminale](maths/expo-premiere.md){.md-button} 
+[Spé mathématiques en terminale](maths/expo-premiere.md){ .md-button .md-button--primary }
 
-[Ressources diverses](ressources/conda.md){.md-button}
+[Ressources diverses](ressources/conda.md){ .md-button .md-button--primary }
 
 !!! savoir "À savoir"
 
@@ -22,7 +22,7 @@ Accès direct:
     :octicons-heart-fill-24:{ .heart }
     :octicons-heart-fill-24:{ .heart }
 
-``` mermaid
+```mermaid
 graph LR
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
@@ -39,11 +39,6 @@ graph LR
 
     Cependant, il ne démontrera rigoureusement son résultat qu’en 1741.
 
-
-
 <div class="centre">Ce site et tout son contenu sont sous la licence</div>
 <div class="centre"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target=_blank><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></div>
 <div class="centre">This work is licensed under a &nbsp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></div>
-
-
-
