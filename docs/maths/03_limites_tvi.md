@@ -103,11 +103,10 @@ représentative de la fonction $f$ dans un repère quelconque du plan.
     -   $\displaystyle\lim_{x\to+\infty}\sqrt{x}=\displaystyle\lim_{x\to+\infty}x^n=+\infty$
 
     -   $\displaystyle\lim_{x\to-\infty}x^n=\left\{
-        \begin{array}{@{}ll}
+        \begin{array}{ll}
         +\infty &  \text{pour~} n \text{~pair} \\
         -\infty &  \text{pour~} n \text{~impair}
         \end{array}
-
         \right.$
 
     -   $\displaystyle\lim_{x\to+\infty}\frac{1}{\sqrt{x}}=\displaystyle\lim_{x\to+\infty}\frac{1}{x^n}=0$
@@ -174,18 +173,17 @@ représentative de la fonction $f$ dans un repère quelconque du plan.
         Par exemple, la fonction $x \mapsto \sin \dfrac{1}{x}$ n'a pas de
         limite en 0.
 
-!!!tip "Propriété Limites finies des fonctions usuelles en $\boldsymbol{0}$"
+!!!tip "Propriété Limites finies des fonctions usuelles en 0"
 
     Soit $n$ un entier naturel non nul.
 
     -   $\displaystyle\lim_{\substack{x\to 0\\ x>0}}\frac{1}{\sqrt{x}}=\displaystyle\lim_{\substack{x\to 0\\ x>0}}\frac{1}{x^n}=+\infty$
 
     -   $\displaystyle\lim_{\substack{x\to 0\\ x<0}}\dfrac{1}{x^n}=\left\{
-        \begin{array}{@{}ll}
+        \begin{array}{ll}
         +\infty &  \text{pour~} n \text{~pair} \\
         -\infty &  \text{pour~} n \text{~impair}
         \end{array}
-
         \right.$
 
 !!!note "Remarque "
