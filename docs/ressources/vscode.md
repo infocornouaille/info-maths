@@ -50,3 +50,13 @@ Installez Black dans votre environnement:
         a = 2
         a = 5 + 3
         ```
+
+## Faire du Latex
+
+Sur Mac, après avoir installé l'extention Latex Workspace
+
+```bash
+sudo cpan -i YAML::Tiny File::HomeDir Unicode::GCString
+```
+
+https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos
