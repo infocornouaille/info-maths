@@ -1,6 +1,9 @@
-hide: - navigation in index.md
+---
+title: Bienvenue sur le site Info-Maths du lycée de Cornouaille
+description: Page d'accueil du site dédié à la NSI et à la spécialité Mathématiques du lycée de Cornouaille à Quimper
+---
 
-# Welcome to Info-Maths
+# Bienvenue sur le site Info-Maths du lycée de Cornouaille
 
 Site du [lycée de Cornouaille](https://lycee-de-cornouaille-quimper.ac-rennes.fr){target=\_blank} ([académie de Rennes](https://www.ac-rennes.fr){target=\_blank}) pour l’enseignement de la spécialité NSI et de Mathématiques.
 
