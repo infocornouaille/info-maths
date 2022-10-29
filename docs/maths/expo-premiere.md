@@ -6,9 +6,9 @@ subject: 'Markdown'
 keywords: [Cours, Rappels]
 ---
 
-# Généralités sur la fonction exponentielle
+## Généralités sur la fonction exponentielle
 
-## Définition
+### Définition
 
 !!!tip "Théorème"
 
@@ -25,7 +25,7 @@ dérivable sur $\mathbb{R}$ telle que:
 
 $\boxed{exp(0)=1}$ et $\boxed{exp'=exp}$
 
-## Propriétés algébriques
+### Propriétés algébriques
 
 !!!tip "Théorème"
 
@@ -61,7 +61,7 @@ réciproquement.
 
     $\!=\!\exp(2)\!-\!2\exp(0)\!+\!\exp(-2)\!=\!\exp(2)\!-\!2\!+\!\exp(-2)$.
 
-## Notation puissance
+### Notation puissance
 
 Toutes ces propriétés rappellent celles des puissances, en effet, on
 rappelle que :
@@ -108,7 +108,7 @@ Simplifier les écritures suivantes
 Démontrer que pour tout $x \in \mathbb{R}$, on a:
 $\dfrac{1}{1+e^{-x}}=\dfrac{e^x}{e^x+1}$
 
-## Lien avec les suites géométriques
+### Lien avec les suites géométriques
 
 De la propriété : $(e^x)^n=e^{nx}$, avec $n \in \mathbb{N}$, on en déduit que :
 
@@ -149,9 +149,9 @@ On peut aussi écrire un algorithme de seuil
     print(n)
     ```
 
-# Étude de la fonction exponentielle
+## Étude de la fonction exponentielle
 
-## La fonction exponentielle
+### La fonction exponentielle
 
 !!!tip "Propriété"
 
@@ -179,7 +179,7 @@ On peut aussi écrire un algorithme de seuil
 
     $y=f'(0)(x-0)+f(0) \iff y=e^0 \times x+e^0=1 \times x + 1\iff y=x+1$
 
-## Résolution d'équations et d'inéquations
+### Résolution d'équations et d'inéquations
 
 De la stricte croissance de la fonction exponentielle, on déduit que :
 
@@ -217,7 +217,7 @@ inéquations.
 3. $e^{\sqrt{3x-5}} <e$
 4. $\dfrac{e^{2x+1}}{^{x-4}}\geqslant e^{x^2-1}$
 
-# Fonctions définies par $f(x)=e^{-kx}$ et $f(x)=e^{kx}$
+## Fonctions définies par $f(x)=e^{-kx}$ et $f(x)=e^{kx}$
 
 De façon générale, les fonctions définies par $f(x)=e^{-ax+b}$ et
 $f(x)=e^{ax+b}$, où $a$ et $b$ sont des entiers relatifs, sont appelées
