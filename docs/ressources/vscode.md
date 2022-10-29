@@ -53,10 +53,10 @@ Installez Black dans votre environnement:
 
 ## Faire du Latex
 
-Sur Mac, après avoir installé l'extention Latex Workspace
+Sur Mac, après avoir installé l'extention Latex Workshop:
 
 ```bash
 sudo cpan -i YAML::Tiny File::HomeDir Unicode::GCString
 ```
 
-https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos
+[https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos](https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos)
