@@ -25,9 +25,6 @@ Ou bien:
     - Material Icon Theme
     - Latex Workshop (proposée à l'installation si vous ouvrez un fichier `.tex`)
 
-
-
-
 ## Utiliser le formateur Python Black avec Visual Studio Code
 
 [Black](https://pypi.org/project/black/) est "le formateur de code Python sans compromis".
@@ -109,7 +106,7 @@ Installez Black dans votre environnement:
 
         ```bash
         miktex packages install latexmk latexindent
-        ``` 
+        ```
 
         Ou bien, si vous avez une installation en administreur:
 
@@ -121,7 +118,7 @@ Installez Black dans votre environnement:
         ```bash
         cpan -i YAML::Tiny File::HomeDir Unicode::GCString
         ```
-    
+
 ## Installer Git
 
 === "Windows"
@@ -135,6 +132,3 @@ Installez Black dans votre environnement:
 === "macOs"
 
     Apple fournit un packet de Git avec [Xcode](https://developer.apple.com/xcode/).
-
-
-
