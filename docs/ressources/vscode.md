@@ -1,29 +1,41 @@
+---
+tile: Visual Studio Code avec Python, LaTex et Markdown
+description: Comment bien utiliser Visual Studio Code pour travailler avec Python, LaTeX et Markdwon. Avec en bonus un peu de HTML, CSS et ... Javascript !!!
+---
+
 # Visual Studio Code
+
+!!!savoir "A retenir"
+
+        Visual Studio Code, c'est le couteau suisse du programmeur !
 
 ## Téléchargement
 
-[VSCode](https://code.visualstudio.com/)
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-Ou bien:
+???info "En ligne de commande"
 
-=== "Windows"
+    === "Windows"
 
-    Si vous êtes sous Windows 11 ou une version récente de Windows 10, vous avez les [winget tools](https://learn.microsoft.com/en-us/windows/package-manager/winget/) d'installés
+        Si vous êtes sous Windows 11 ou une version récente de Windows 10, vous avez les [winget tools](https://learn.microsoft.com/en-us/windows/package-manager/winget/) d'installés
 
-    ```bash
-    winget install Microsoft.VisualStudioCode --override '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders"'
-    ```
+        ```bash
+        winget install Microsoft.VisualStudioCode --override '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders"'
+        ```
 
-=== "macOs"
+    === "macOs"
 
-    ```bash
-    brew install --cask visual-studio-code
-    ```
+        ```bash
+        brew install --cask visual-studio-code
+        ```
 
 ## Extensions utiles
 
-    - Material Icon Theme
-    - Latex Workshop (proposée à l'installation si vous ouvrez un fichier `.tex`)
+1.  Material Icon Theme
+2.  Latex Workshop:
+
+    - proposée à l'installation si vous ouvrez un fichier `.tex`
+    - voir plus bas pour la configuration.
 
 ## Utiliser le formateur Python Black avec Visual Studio Code
 
@@ -72,11 +84,13 @@ Installez Black dans votre environnement:
         a = 5 + 3
         ```
 
-## Faire du Latex
+## Faire du Latex avec Visual Studio Code
+
+### Préparation de l'environnement de travail
 
 === "macOs"
 
-    Sur Mac, après avoir installé l'extension Latex Workshop:
+    Sur Mac:
 
     ```bash
     sudo cpan -i YAML::Tiny File::HomeDir Unicode::GCString
@@ -84,7 +98,7 @@ Installez Black dans votre environnement:
 
     [https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos](https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos)
 
-=== "windows"
+=== "Windows"
 
     Si vous êtes sous Windows 11 ou une version récente de Windows 10, vous avez les [winget tools](https://learn.microsoft.com/en-us/windows/package-manager/winget/) d'installés
 
@@ -100,7 +114,7 @@ Installez Black dans votre environnement:
         2. Aller à l'onglet "Paramètres systèmes avancés" puis "Variables d'environnement"
         3. Dans "Variables d'environnement pour ...", cliquez sur "Nouvelles..."
         4. "Nom de la variable": `Perl` et "Valeur de la variable": `C:\Strawberry\perl\bin`
-        4. Testez en tapant `cpan -v`. Si vous avez un message d'erreur du type "cpan : Le terme «cpan» n'est pas reconnu comme nom d'applet de commande,", vous devrez peut-être redémarrer l'ordinateur.
+        5. Testez en tapant `cpan -v`. Si vous avez un message d'erreur du type "cpan : Le terme «cpan» n'est pas reconnu comme nom d'applet de commande,", vous devrez peut-être redémarrer l'ordinateur.
 
     3. Ensuite:
 
@@ -118,6 +132,38 @@ Installez Black dans votre environnement:
         ```bash
         cpan -i YAML::Tiny File::HomeDir Unicode::GCString
         ```
+
+### Installer et configurer LaTeX Workshop
+
+Il suffit d'ouvrir un fichier ".tex" pour que VS Code propose d'installer l'extension LaTeX Workshop
+
+#### Pour compiler en xelatex ou en lualatex:
+
+Dans les préférences, rechercher `latex-workshop.latex.tools`
+
+Puis modifier à votre convenance, par exemple:
+
+```json hl_lines="7"
+"latex-workshop.latex.tools": [
+
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-lualatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+```
+
+#### Pour ajouter des extension pour "cleaner" les fichiers auxiliiares
+
+Rechercher `latex-workshop.latex.clean.fileTypes`
+
+Puis ajouter ce que vous voulez, par exemple `*.cor`
 
 ## Installer Git
 
