@@ -1,3 +1,5 @@
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 # info-maths
 
 Site des cours de NSI et de spécialité Mathématiques du lycée de Cornouaille
