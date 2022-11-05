@@ -1,12 +1,10 @@
-# Les listes chaïnées
+# Les listes chaînées
 
 ## Définition générale
 
 Une liste est un ensemble ordonné d'objets. Généralement, ces données seront de même type, mais ce n'est pas structurellement obligatoire.
 
 ## Les listes chaînées _(linked lists)_
-
-![image](data/linked.png){: .center width=40%}
 
 Lorsque l'implémentation de la liste fait apparaître une chaîne de valeurs, chacune pointant vers la suivante, on dit que la liste est une liste **chaînée**.
 
