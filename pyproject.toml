@@ -8,7 +8,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.7"
 mkdocs = "^1.4.1"
-mkdocs-material = "^8.5.7"
+mkdocs-material = "^8.5.8"
 pymdown-extensions = "^9.7"
 fontawesome-markdown = "^0.2.6"
 mkdocs-git-revision-date-localized-plugin = "^1.1.0"
