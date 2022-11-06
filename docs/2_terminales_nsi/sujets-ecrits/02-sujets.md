@@ -7,6 +7,8 @@ https://fabricenativel.github.io/NSITerminale/index_annales/
 
 https://fabricenativel.github.io/Terminale/Annales/2022/EE/#polynesie-jour-1-22-nsij1po1
 
+https://lewebpedagogique.com/dlaporte/corrections-epreuves-pratiques-2021-nsi/
+
 ## 2022 Asie Jour 1
 
 - **NSIJ1JA1** - [2022 Asie Jour 1 Exo 1](./pdf/22-NSIJ1JA1-exo1.pdf): algorithmique – chaînes de caractères – complexité.
@@ -90,6 +92,47 @@ https://fabricenativel.github.io/Terminale/Annales/2022/EE/#polynesie-jour-1-22-
 ## Amérique du Sud Jour 1
 
 - **22-NSIJ1AS1**: [2022 Amérique du Sud Jour 1 Exo 1](./pdf/22-NSIJ1AS1-exo1.pdf): bases de données
+
+??? "Proposition de correction"
+
+    1.  .
+        1. `id_mere` ne peut être utilisé comme clé primaire. En effet une mère peut avoir plusieurs enfants.
+        2. Le 2-uplet (`date`, `rang`) donne un identifiant unique: pour une date donnée, le rang augmente à chaque naissance, donc chaque couple (`date`, `rang`) est unique.
+        3. le 2-uplet ne peut pas assurer de donner un identifiant unique: deux bébés peuvent faire le même poids et la même taille.
+
+    2. Il y a un problème de contrainte d’intégrité entre la table Naissances et la table Patientes: un enfant a obligatoirement une mère. Avec cette requête on essaie de supprimer une mère dans la table Patients, sans supprimer le ou les bébé(s) associé(s) dans la table Naissance.
+
+    3.
+    ```sql
+    INSERT INTO Patientes
+    VALUES(13862, "Bélanger", "Ninette", "La Rochelle");
+    ```
+
+    4.
+    ```sql
+    UPDATE Naissances
+    SET prenom = "Laurette"
+    WHERE idmere = 13860;
+    ```
+
+    5.
+    ```sql
+    SELECT nom, prenom
+    FROM Patientes
+    WHERE commune = "Aigrefeuille d'Aunis"
+    ORDER BY nom, prenom;
+    ```
+
+    6.
+    ```sql
+    SELECT AVG(Naissances.poids)
+    FROM Naissances, TypesAccouchement
+    WHERE TypesAccouchement.libelleAcc = "césarienne"
+    AND Naissances.acc = TypesAccouchement.idAcc;
+    ```
+
+    7.. Les nom et prénom des mères qui ont accouché par voie naturelle
+
 - **22-NSIJ1AS1**: [2022 Amérique du Sud Jour 1 Exo 2](./pdf/22-NSIJ1AS1-exo2.pdf): programmation et algorithmes de tris
 - **22-NSIJ1AS1**: [2022 Amérique du Sud Jour 1 Exo 3](./pdf/22-NSIJ1AS1-exo3.pdf): arbres binaires
 - **22-NSIJ1AS1**: [2022 Amérique du Sud Jour 1 Exo 4](./pdf/22-NSIJ1AS1-exo4.pdf): gestion des processus et des ressources par un système d'exploitation
