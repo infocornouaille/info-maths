@@ -8,11 +8,10 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.7"
 mkdocs = "^1.4.1"
-mkdocs-material = "^8.5.8"
+mkdocs-material = "^8.5.10"
 pymdown-extensions = "^9.7"
 fontawesome-markdown = "^0.2.6"
 mkdocs-git-revision-date-localized-plugin = "^1.1.0"
-mkdocs-glightbox = "^0.3.0"
 Pillow = "^9.2.0"
 CairoSVG = "^2.5.2"
 mkdocs-macros-plugin = "^0.7.0"
@@ -20,7 +19,7 @@ mkdocs-awesome-pages-plugin = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10.0"
-jupyter-black = "^0.3.1"
+jupyter-black = "^0.3.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
