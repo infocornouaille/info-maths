@@ -94,7 +94,6 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
-  - glightbox
   - social
   - awesome-pages:
       collapse_single_pages: false
@@ -105,11 +104,7 @@ markdown_extensions:
   - attr_list
   - abbr
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
 
   - pymdownx.highlight:
       anchor_linenums: true
