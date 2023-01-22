@@ -1,6 +1,7 @@
-```{=latex}
-\fexo{Terminale Spécialité}{Devoir Surveillé 4}{Janvier 2021}
-```
+---
+title: DS Probabilités Convexité
+password: hopgerflor
+---
 
 ## Exercice 1: /5 points
 

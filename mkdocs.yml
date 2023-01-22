@@ -98,7 +98,11 @@ plugins:
   - awesome-pages:
       collapse_single_pages: false
   - macros
-
+  - encryptcontent:
+      arithmatex: True
+      hljs: True
+      remember_password: True
+      default_expire_delay: 1 # <-- Default expire delay in hours (optional)
 markdown_extensions:
   - admonition
   - attr_list

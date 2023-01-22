@@ -17,6 +17,7 @@ CairoSVG = "^2.5.2"
 mkdocs-macros-plugin = "^0.7.0"
 mkdocs-awesome-pages-plugin = "^2.8.0"
 mkdocs-material = "^9.0.3"
+mkdocs-encryptcontent-plugin = "^2.4.4"
 
 [tool.poetry.dev-dependencies]
 black = "^22.12.0"

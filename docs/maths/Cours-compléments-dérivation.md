@@ -4,6 +4,7 @@ author: [David Couronné]
 date: '2022-10-23'
 subject: 'Fonctions'
 keywords: [Cours, Rappels]
+password: hopgerflor
 ---
 
 ## Dérivées des fonctions composées
