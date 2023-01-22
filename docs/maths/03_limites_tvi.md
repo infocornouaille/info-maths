@@ -1,7 +1,6 @@
 ---
 title: Limites de fonctions et continuité
 description: Limites de fonctions et continuité en Terminale Spécialité Mathématiques
-password: hopgerflor
 ---
 
 ## Limite d'une fonction en l'infini

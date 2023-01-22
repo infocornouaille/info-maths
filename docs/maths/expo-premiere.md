@@ -4,7 +4,6 @@ author: [David Couronné]
 date: '2022-10-23'
 subject: 'Markdown'
 keywords: [Cours, Rappels]
-password: hopgerflor
 ---
 
 ## Généralités sur la fonction exponentielle

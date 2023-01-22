@@ -1,6 +1,5 @@
 ---
 title: DS Probabilités Convexité
-password: hopgerflor
 ---
 
 ## Exercice 1: /5 points
