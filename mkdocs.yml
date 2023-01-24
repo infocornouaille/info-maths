@@ -15,6 +15,7 @@ theme:
   name: material
   language: fr
   features:
+    - content.code.copy
     # - announce.dismiss
     - content.code.annotate
     # - content.tabs.link
