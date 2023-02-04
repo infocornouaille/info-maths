@@ -5,8 +5,8 @@ site_description: >-
   Cours de NSI et de Mathématiques au lycée de Cornouaille
 
 # Repository
-repo_name: davidcouronne/info-maths
-repo_url: https://github.com/davidcouronne/info-maths
+repo_name: infocornouaille/info-maths
+repo_url: https://github.com/infocornouaille/info-maths
 edit_uri: edit/main/docs/
 copyright: CC BY-SA / David Couronné
 
