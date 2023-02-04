@@ -1,0 +1,3220 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Limites de fonctions et continuité en Terminale Spécialité Mathématiques">
+      
+      
+        <meta name="author" content="David Couronné">
+      
+      
+        <link rel="canonical" href="https://info-maths.netlify.app/maths/03_limites_tvi/">
+      
+      
+        <link rel="prev" href="../../2_terminales_nsi/sujets_pratiques/sujet23/">
+      
+      
+        <link rel="next" href="../Cours-compl%C3%A9ments-d%C3%A9rivation/">
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Limites de fonctions et continuité - Info-Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-F1835NSKEC"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-F1835NSKEC",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-F1835NSKEC",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Limites de fonctions et continuité - Info-Maths" >
+      
+        <meta  property="og:description"  content="Limites de fonctions et continuité en Terminale Spécialité Mathématiques" >
+      
+        <meta  property="og:image"  content="https://info-maths.netlify.app/assets/images/social/maths/03_limites_tvi.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://info-maths.netlify.app/maths/03_limites_tvi/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Limites de fonctions et continuité - Info-Maths" >
+      
+        <meta  name="twitter:description"  content="Limites de fonctions et continuité en Terminale Spécialité Mathématiques" >
+      
+        <meta  name="twitter:image"  content="https://info-maths.netlify.app/assets/images/social/maths/03_limites_tvi.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#limite-dune-fonction-en-linfini" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Info-Maths" class="md-header__button md-logo" aria-label="Info-Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Info-Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Limites de fonctions et continuité
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/infocornouaille/info-maths" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    infocornouaille/info-maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../1_premiere_nsi/" class="md-tabs__link">
+        Première NSI
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../2_terminales_nsi/" class="md-tabs__link">
+        Terminale NSI
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Maths
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ressources/conda/" class="md-tabs__link">
+        Ressources
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Info-Maths" class="md-nav__button md-logo" aria-label="Info-Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Info-Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/infocornouaille/info-maths" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    infocornouaille/info-maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../1_premiere_nsi/">Première NSI</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Première NSI" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Première NSI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" tabindex="0" aria-expanded="false">
+          Bases de Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Bases de Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Bases de Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/1_bases_de_python/1_principes/" class="md-nav__link">
+        Principes de base de Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/1_bases_de_python/2_variables/" class="md-nav__link">
+        Stockage dans des variables en Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/1_bases_de_python/3_1_booleens/" class="md-nav__link">
+        Les booléens
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/1_bases_de_python/3_string/" class="md-nav__link">
+        Chaînes de caractères en Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/1_bases_de_python/4_fonctions/" class="md-nav__link">
+        Les fonctions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/1_bases_de_python/5_ifelse/" class="md-nav__link">
+        Les structures conditionnelles
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" tabindex="0" aria-expanded="false">
+          Algorithmique
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Algorithmique" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Algorithmique
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/algorithmique/introduction/" class="md-nav__link">
+        Introduction à l'algorithmique
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/algorithmique/parcours/" class="md-nav__link">
+        Algorithmes de parcours
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" tabindex="0" aria-expanded="false">
+          Projets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projets" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Projets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4_1" type="checkbox" id="__nav_2_4_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../1_premiere_nsi/projets/projet1/">Projet1</a>
+          
+            <label for="__nav_2_4_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Projet1" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Projet1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/projets/projet1/entree-sortie/" class="md-nav__link">
+        Input et print
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/projets/projet1/gestion-fichiers/" class="md-nav__link">
+        Gestion de fichiers
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4_2" type="checkbox" id="__nav_2_4_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../1_premiere_nsi/projets/projet2/">Projet2</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Projet2" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Projet2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" tabindex="0" aria-expanded="false">
+          Representation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Representation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Representation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/representation/binaire/" class="md-nav__link">
+        Représentation des nombres
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/representation/codage_entiers/" class="md-nav__link">
+        Le codage des nombres entiers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/representation/codage_non_entiers/" class="md-nav__link">
+        Le codage en binaire des nombres non entiers
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6" tabindex="0" aria-expanded="false">
+          Types construits
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Types construits" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Types construits
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/types_construits/1_listes/" class="md-nav__link">
+        Listes en Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/types_construits/dictionnaires/" class="md-nav__link">
+        Dictionnaires en Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_premiere_nsi/types_construits/tuple/" class="md-nav__link">
+        tuple en Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../2_terminales_nsi/">Terminale NSI</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Terminale NSI" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Terminale NSI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/1_poo/" class="md-nav__link">
+        Programmation Orientée Objet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/2_recursivite/" class="md-nav__link">
+        Récursivité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/3_sql/" class="md-nav__link">
+        Bases de données et SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../2_terminales_nsi/4_Structures_de_donnees/">Structures de données</a>
+          
+            <label for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Structures de données" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Structures de données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/4_Structures_de_donnees/1_listes-chainees/" class="md-nav__link">
+        Les listes chaînées
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/4_Structures_de_donnees/2_piles/" class="md-nav__link">
+        Les piles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/4_Structures_de_donnees/files/" class="md-nav__link">
+        Les files
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_6" tabindex="0" aria-expanded="false">
+          DM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          DM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_6_1" type="checkbox" id="__nav_3_6_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_6_1" tabindex="0" aria-expanded="false">
+          DM1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DM1" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          DM1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/DM/DM1/dm1/" class="md-nav__link">
+        Enoncé DM1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/DM/DM1/geometrie/" class="md-nav__link">
+        Géométrie en POO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/DM/DM1/hanoi/" class="md-nav__link">
+        Tours de Hanoi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/DM/DM1/jeu-objet/" class="md-nav__link">
+        Jeu POO
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_6_2" type="checkbox" id="__nav_3_6_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_6_2" tabindex="0" aria-expanded="false">
+          DM2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DM2" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          DM2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/DM/DM2/dm2/" class="md-nav__link">
+        Enoncé DM2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../2_terminales_nsi/sujets-ecrits/">Sujets ecrits</a>
+          
+            <label for="__nav_3_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Sujets ecrits" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Sujets ecrits
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/02-sujets/" class="md-nav__link">
+        Sujets Complets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/03-structures/" class="md-nav__link">
+        Structures de données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/04-bases-donnees/" class="md-nav__link">
+        Bases de données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/05-architecture/" class="md-nav__link">
+        Architectures matérielles, systèmes d'exploitation et réseaux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/06-langages/" class="md-nav__link">
+        Langages et programmation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/07-algorithmique/" class="md-nav__link">
+        Algorithmique
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets-ecrits/2022-polynesie-1/" class="md-nav__link">
+        2022 Polynésie Jour 1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../2_terminales_nsi/sujets_pratiques/">Sujets pratiques</a>
+          
+            <label for="__nav_3_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Sujets pratiques" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Sujets pratiques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets_pratiques/sujet01/" class="md-nav__link">
+        Sujet NSI 2022 - Sujet 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets_pratiques/sujet02/" class="md-nav__link">
+        Sujet NSI 2022 - Sujet 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets_pratiques/sujet03/" class="md-nav__link">
+        Sujet NSI 2022 - Sujet 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets_pratiques/sujet04/" class="md-nav__link">
+        Sujet NSI 2022 - Sujet 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets_pratiques/sujet11/" class="md-nav__link">
+        Sujet NSI 2022 - Sujet 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_terminales_nsi/sujets_pratiques/sujet23/" class="md-nav__link">
+        Sujet NSI 2022 - Sujet 23
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="true">
+          Maths
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Maths" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Maths
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Limites de fonctions et continuité
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Limites de fonctions et continuité
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#limite-dune-fonction-en-linfini" class="md-nav__link">
+    Limite d'une fonction en l'infini
+  </a>
+  
+    <nav class="md-nav" aria-label="Limite d'une fonction en l'infini">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limite-infinie-en-linfini" class="md-nav__link">
+    Limite infinie en l'infini
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limite-finie-en-linfini" class="md-nav__link">
+    Limite finie en l'infini
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limites-des-fonctions-de-reference-en-infty" class="md-nav__link">
+    Limites des fonctions de référence en \(\infty\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limite-infinie-en-un-reel" class="md-nav__link">
+    Limite infinie en un réel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-sur-les-limites" class="md-nav__link">
+    Opérations sur les limites
+  </a>
+  
+    <nav class="md-nav" aria-label="Opérations sur les limites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limite-dune-fonction-composee" class="md-nav__link">
+    Limite d'une fonction composée
+  </a>
+  
+    <nav class="md-nav" aria-label="Limite d'une fonction composée">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonction-composee" class="md-nav__link">
+    Fonction composée
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-de-composition-des-limites" class="md-nav__link">
+    Théorème de composition des limites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limites-et-comparaison" class="md-nav__link">
+    Limites et comparaison
+  </a>
+  
+    <nav class="md-nav" aria-label="Limites et comparaison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-de-comparaison" class="md-nav__link">
+    Théorème de comparaison
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consequence-croissance-comparee" class="md-nav__link">
+    Conséquence : croissance comparée
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-dencadrement-dit-des-gendarmes" class="md-nav__link">
+    Théorème d'encadrement dit " des gendarmes "
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuite-dune-fonction" class="md-nav__link">
+    Continuité d'une fonction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-des-valeurs-intermediaires" class="md-nav__link">
+    Théorème des valeurs intermédiaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonction-continue-et-suite-convergente" class="md-nav__link">
+    Fonction continue et suite convergente
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cours-compl%C3%A9ments-d%C3%A9rivation/" class="md-nav__link">
+        Compléments sur la dérivation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DS4-Probabilit%C3%A9s-convexit%C3%A9/" class="md-nav__link">
+        DS Probabilités Convexité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expo-premiere/" class="md-nav__link">
+        Exponentielle - première
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Ressources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ressources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Ressources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressources/conda/" class="md-nav__link">
+        Python - Conda, Miniconda, Anaconda
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressources/types/" class="md-nav__link">
+        Introduction aux Types Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressources/vscode/" class="md-nav__link">
+        Visual Studio Code
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_4" tabindex="0" aria-expanded="false">
+          Mkdocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mkdocs" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mkdocs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressources/mkdocs/admonitions/" class="md-nav__link">
+        Admonitions avec Mkdocs Material
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressources/mkdocs/katex/" class="md-nav__link">
+        Ajouter katex à mkdocs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#limite-dune-fonction-en-linfini" class="md-nav__link">
+    Limite d'une fonction en l'infini
+  </a>
+  
+    <nav class="md-nav" aria-label="Limite d'une fonction en l'infini">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limite-infinie-en-linfini" class="md-nav__link">
+    Limite infinie en l'infini
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limite-finie-en-linfini" class="md-nav__link">
+    Limite finie en l'infini
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limites-des-fonctions-de-reference-en-infty" class="md-nav__link">
+    Limites des fonctions de référence en \(\infty\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limite-infinie-en-un-reel" class="md-nav__link">
+    Limite infinie en un réel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations-sur-les-limites" class="md-nav__link">
+    Opérations sur les limites
+  </a>
+  
+    <nav class="md-nav" aria-label="Opérations sur les limites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limite-dune-fonction-composee" class="md-nav__link">
+    Limite d'une fonction composée
+  </a>
+  
+    <nav class="md-nav" aria-label="Limite d'une fonction composée">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonction-composee" class="md-nav__link">
+    Fonction composée
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-de-composition-des-limites" class="md-nav__link">
+    Théorème de composition des limites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limites-et-comparaison" class="md-nav__link">
+    Limites et comparaison
+  </a>
+  
+    <nav class="md-nav" aria-label="Limites et comparaison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-de-comparaison" class="md-nav__link">
+    Théorème de comparaison
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consequence-croissance-comparee" class="md-nav__link">
+    Conséquence : croissance comparée
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-dencadrement-dit-des-gendarmes" class="md-nav__link">
+    Théorème d'encadrement dit " des gendarmes "
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuite-dune-fonction" class="md-nav__link">
+    Continuité d'une fonction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theoreme-des-valeurs-intermediaires" class="md-nav__link">
+    Théorème des valeurs intermédiaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonction-continue-et-suite-convergente" class="md-nav__link">
+    Fonction continue et suite convergente
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/infocornouaille/info-maths/edit/main/docs/maths/03_limites_tvi.md" title="Editer cette page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/infocornouaille/info-maths/raw/main/docs/maths/03_limites_tvi.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+
+  <h1>Limites de fonctions et continuité</h1>
+
+<h2 id="limite-dune-fonction-en-linfini">Limite d'une fonction en l'infini</h2>
+<p>Dans toute cette partie, <span class="arithmatex">\(\mathcal{C}_f\)</span> désigne la courbe
+représentative de la fonction <span class="arithmatex">\(f\)</span> dans un repère quelconque du plan.</p>
+<h3 id="limite-infinie-en-linfini">Limite infinie en l'infini</h3>
+<div class="admonition tip">
+<p class="admonition-title">Définition </p>
+<p>La fonction <span class="arithmatex">\(f\)</span> a pour limite <span class="arithmatex">\(+\infty\)</span> en <span class="arithmatex">\(+\infty\)</span> si tout intervalle
+de <span class="arithmatex">\(\mathbb{R}\)</span> du type <span class="arithmatex">\(]a~;~+\infty[\)</span> contient toutes les valeurs de
+<span class="arithmatex">\(f(x)\)</span> pour <span class="arithmatex">\(x\)</span> assez grand. On note alors :
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}f(x)=+\infty\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Soit <span class="arithmatex">\(f\)</span> la fonction racine carrée. En effet, <span class="arithmatex">\(\sqrt{x}\)</span> devient aussi
+grand que l'on veut à mesure que <span class="arithmatex">\(x\)</span> augmente.</p>
+<p>On a <span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\sqrt{x}=+\infty\)</span>.</p>
+<p>Soit un intervalle ouvert <span class="arithmatex">\(I=]a~;~+\infty[\)</span>. Alors, <span class="arithmatex">\(f(x)\)</span> sera toujours
+dans <span class="arithmatex">\(I\)</span> pour <span class="arithmatex">\(x\)</span> assez grand.</p>
+<p>Graphiquement, si on considère le demi-plan supérieur de frontière une
+droite d'équation <span class="arithmatex">\(y=a\)</span>, il existe toujours une valeur
+de <span class="arithmatex">\(a\)</span> au delà de laquelle <span class="arithmatex">\(\mathcal{C}_f\)</span> ne sort plus de ce demi-plan.</p>
+<p><img alt="image" src="../img/03_limites_tvi-3.jpg" /></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<ul>
+<li>
+<p>On définit de façon analogue : <span class="arithmatex">\(\displaystyle\lim_{x\to +\infty}f(x)=-\infty\)</span>,
+    <span class="arithmatex">\(\displaystyle\lim_{x\to -\infty}f(x)=+\infty\)</span> et
+    <span class="arithmatex">\(\lim_{x\to -\infty}f(x)=-\infty\)</span>.</p>
+</li>
+<li>
+<p>Il existe des fonctions qui n'admettent pas de limite en l'infini.
+    Par exemple, les fonctions sinus et cosinus n'admettent de limite ni
+    en <span class="arithmatex">\(+\infty\)</span>, ni en <span class="arithmatex">\(-\infty\)</span>.</p>
+</li>
+<li>
+<p>Une fonction qui tend vers <span class="arithmatex">\(+\infty\)</span> lorsque <span class="arithmatex">\(x\)</span> tend vers <span class="arithmatex">\(+\infty\)</span>
+    n'est pas forcément croissante(voir observations figure 5)</p>
+</li>
+</ul>
+</div>
+<h3 id="limite-finie-en-linfini">Limite finie en l'infini</h3>
+<div class="admonition tip">
+<p class="admonition-title">Définition </p>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction définie au moins sur un intervalle de <span class="arithmatex">\(\mathbb{R}\)</span>
+du type <span class="arithmatex">\(]a~;~+\infty[\)</span>.</p>
+<p>La fonction <span class="arithmatex">\(f\)</span> a pour limite <span class="arithmatex">\(\ell\)</span> en <span class="arithmatex">\(+\infty\)</span> si tout intervalle
+ouvert contenant <span class="arithmatex">\(\ell\)</span> contient toutes les valeurs de <span class="arithmatex">\(f(x)\)</span> pour <span class="arithmatex">\(x\)</span>
+assez grand. On note alors : <span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}f(x)=\ell\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Soit <span class="arithmatex">\(f\)</span> la fonction définie sur <span class="arithmatex">\(]0~;~+\infty[\)</span> par
+<span class="arithmatex">\(f(x)=\dfrac{1}{x}+1\)</span>.</p>
+<p>L'inverse de <span class="arithmatex">\(x\)</span> se rapproche de <span class="arithmatex">\(0\)</span> à mesure que <span class="arithmatex">\(x\)</span> augmente. On a
+donc <span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\left(\dfrac{1}{x}+1\right)=1\)</span>.</p>
+<p>Soit un intervalle ouvert <span class="arithmatex">\(I\)</span> tel que <span class="arithmatex">\(1\in I\)</span>. Alors, <span class="arithmatex">\(f(x)\)</span> sera
+toujours dans <span class="arithmatex">\(I\)</span> pour <span class="arithmatex">\(x\)</span> assez grand. Graphiquement, aussi étroite que
+soit une bande parallèle à la droite d'équation <span class="arithmatex">\(y=1\)</span> et qui la
+contient, il existe toujours une valeur de <span class="arithmatex">\(x\)</span> au delà de laquelle
+<span class="arithmatex">\(\mathcal{C}_f\)</span> ne sort plus de cette bande.</p>
+<p><img alt="image" src="../img/03_limites_tvi-4.jpg" /></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Définition Asymptote horizontale</p>
+<p>La droite d'équation <span class="arithmatex">\(y=\ell\)</span> est <strong>asymptote horizontale</strong> à
+<span class="arithmatex">\(\boldsymbol{\mathcal{C}_f}\)</span> <strong>en</strong> <span class="arithmatex">\(\boldsymbol{+\infty}\)</span> si
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty} f(x)=\ell\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>On définit de façon analogue <span class="arithmatex">\(\displaystyle\lim_{x\to-\infty} f(x)=\ell\)</span> qui
+caractérise une asymptote horizontale à <span class="arithmatex">\(\mathcal{C}_f\)</span> en <span class="arithmatex">\(-\infty\)</span>
+d'équation <span class="arithmatex">\(y=\ell\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>On a vu précédemment que
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\left(\dfrac{1}{x}+1\right)=1\)</span>. On a aussi
+<span class="arithmatex">\(\displaystyle\lim_{x\to-\infty}\left(\dfrac{1}{x}+1\right)=1\)</span>.\
+Donc, la droite d'équation <span class="arithmatex">\(y=1\)</span> est asymptote horizontale à la courbe
+<span class="arithmatex">\(\mathcal{C}_f\)</span> en <span class="arithmatex">\(+\infty\)</span> et en <span class="arithmatex">\(-\infty\)</span> .</p>
+</div>
+<h3 id="limites-des-fonctions-de-reference-en-infty">Limites des fonctions de référence en <span class="arithmatex">\(\infty\)</span></h3>
+<div class="admonition tip">
+<p class="admonition-title">Propriété Limites finies des fonctions usuelles en <span class="arithmatex">\(\pm\infty\)</span></p>
+<p>Soit <span class="arithmatex">\(n\)</span> un entier naturel non nul.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\sqrt{x}=\displaystyle\lim_{x\to+\infty}x^n=+\infty\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to-\infty}x^n=\left\{
+    \begin{array}{ll}
+    +\infty &amp;  \text{pour~} n \text{~pair} \\
+    -\infty &amp;  \text{pour~} n \text{~impair}
+    \end{array}
+    \right.\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\frac{1}{\sqrt{x}}=\displaystyle\lim_{x\to+\infty}\frac{1}{x^n}=0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to-\infty}\frac{1}{x^n}=0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to-\infty} e^x=0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to+\infty} e^x=+\infty\)</span></p>
+</li>
+</ul>
+</div>
+<h2 id="limite-infinie-en-un-reel">Limite infinie en un réel</h2>
+<div class="admonition tip">
+<p class="admonition-title">Définition </p>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction définie sur un intervalle ouvert de <span class="arithmatex">\(\mathbb{R}\)</span>
+du type <span class="arithmatex">\(]x_0-\varepsilon~;~x_0[\)</span> ou <span class="arithmatex">\(]x_0~;~x_0+\varepsilon[\)</span>.</p>
+<p>La fonction <span class="arithmatex">\(f\)</span> a pour limite <span class="arithmatex">\(+\infty\)</span> en <span class="arithmatex">\(x_0\)</span> si tout intervalle de
+<span class="arithmatex">\(\mathbb{R}\)</span> du type <span class="arithmatex">\(]A~;~+\infty[\)</span> contient toutes les valeurs de
+<span class="arithmatex">\(f(x)\)</span> pour <span class="arithmatex">\(x\)</span> assez proche de <span class="arithmatex">\(x_0\)</span>. On note alors :
+<span class="arithmatex">\(\displaystyle\lim_{x\to x_0}f(x)=+\infty\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Soit <span class="arithmatex">\(f\)</span> la fonction définie sur <span class="arithmatex">\(]1~;~+\infty[\)</span> par
+<span class="arithmatex">\(f(x)=\dfrac{1}{x-1}\)</span>.</p>
+<p>Si <span class="arithmatex">\(x\)</span> tend <span class="arithmatex">\(1\)</span>, alors <span class="arithmatex">\(x-1\)</span> tend vers <span class="arithmatex">\(0\)</span> et son inverse tend vers
+<span class="arithmatex">\(+\infty\)</span>.On a <span class="arithmatex">\(\displaystyle\lim_{x\to 1}\dfrac{1}{x-1}=+\infty\)</span>.</p>
+<p>Soit un intervalle ouvert <span class="arithmatex">\(I=]1~;~1+\varepsilon[\)</span>. Alors, <span class="arithmatex">\(f(x)\)</span> sera
+toujours dans <span class="arithmatex">\(I\)</span> pour <span class="arithmatex">\(x\)</span> assez proche de <span class="arithmatex">\(x_0\)</span>. Graphiquement,
+<span class="arithmatex">\(\mathcal{C}_f\)</span> peut être aussi proche que l'on veut de la droite
+d'équation <span class="arithmatex">\(x=1\)</span>.</p>
+<p><img alt="image" src="../img/03_limites_tvi-5.jpg" /></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Définition Asymptote verticale</p>
+<p>La droite d'équation <span class="arithmatex">\(x=x_0\)</span> est <strong>asymptote verticale</strong> à
+<span class="arithmatex">\(\boldsymbol{\mathcal{C}_f}\)</span> si <span class="arithmatex">\(\displaystyle\lim_{x\to x_0} f(x)=\pm\infty\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>On a vu précédemment que <span class="arithmatex">\(\displaystyle\lim_{x\to 1}\dfrac{1}{x-1}=+\infty\)</span>.\
+Donc, la droite d'équation <span class="arithmatex">\(x=1\)</span> est asymptote verticale à l'hyperbole
+<span class="arithmatex">\(\mathcal{C}_f\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<ul>
+<li>
+<p>Lorsque <span class="arithmatex">\(x\)</span> tend vers <span class="arithmatex">\(x_0\)</span>, cela peut parfois se faire en
+    augmentant ou en diminuant. On parle alors de limite de <span class="arithmatex">\(f\)</span> à gauche
+    (resp. droite) en <span class="arithmatex">\(x_0\)</span> qu'on note
+    <span class="arithmatex">\(\displaystyle\lim_{\substack{x\to x_0\\ x&lt;x_0}}f(x)\)</span> (resp.
+    <span class="arithmatex">\(\displaystyle\lim_{\substack{x\to x_0\\ x&gt;x_0}}f(x)\)</span>).</p>
+</li>
+<li>
+<p>Une fonction admet une limite en <span class="arithmatex">\(x_0\)</span> si, et seulement si, <span class="arithmatex">\(f\)</span>
+    admet des limites à droite et à gauche en <span class="arithmatex">\(x_0\)</span> qui sont égales (ce
+    qui n'est pas toujours le cas).</p>
+</li>
+<li>
+<p>Une fonction peut très bien ne pas avoir de limite du tout en un
+    point.</p>
+<p>Par exemple, la fonction <span class="arithmatex">\(x \mapsto \sin \dfrac{1}{x}\)</span> n'a pas de
+limite en 0.</p>
+</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Propriété Limites finies des fonctions usuelles en 0</p>
+<p>Soit <span class="arithmatex">\(n\)</span> un entier naturel non nul.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{\substack{x\to 0\\ x&gt;0}}\frac{1}{\sqrt{x}}=\displaystyle\lim_{\substack{x\to 0\\ x&gt;0}}\frac{1}{x^n}=+\infty\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{\substack{x\to 0\\ x&lt;0}}\dfrac{1}{x^n}=\left\{
+    \begin{array}{ll}
+    +\infty &amp;  \text{pour~} n \text{~pair} \\
+    -\infty &amp;  \text{pour~} n \text{~impair}
+    \end{array}
+    \right.\)</span></p>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>L'aperçu de la courbe représentative d'une fonction avec une
+calculatrice ou un logiciel peut aider à conjecturer une limite (et donc
+éventuellement une asymptote à la courbe).</p>
+</div>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction dont on a un aperçu du graphe <span class="arithmatex">\(\mathcal{C}\)</span>.</p>
+<p>Déterminer son ensemble de définition <span class="arithmatex">\(\mathcal{D}\)</span>, puis conjecturer les limites aux bornes de <span class="arithmatex">\(\mathcal{D}\)</span> et les asymptotes à <span class="arithmatex">\(\mathcal{C}\)</span>.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(f:x\mapsto \dfrac{x^3-1}{x^3+1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(f:x\mapsto 2x-\sqrt{4x^2-1}\)</span></p>
+</li>
+</ol>
+<p><strong>Correction</strong></p>
+<p><strong>1.</strong> <span class="arithmatex">\(\mathcal{D}=\mathbb{R}\setminus\{-1\}\)</span>. A priori, on aurait :
+<span class="arithmatex">\(\displaystyle\lim_{x\to\pm+\infty}f(x)=1\)</span> ;
+<span class="arithmatex">\(\displaystyle\lim_{\substack{x\to -1\\ x&lt;-1}}f(x)=+\infty\)</span> et
+<span class="arithmatex">\(\displaystyle\lim_{\substack{x\to -1\\ x&gt;-1}}f(x)=-\infty\)</span>.</p>
+<p><span class="arithmatex">\(\mathcal{C}\)</span> aurait alors une asymptote horizontale d'équation <span class="arithmatex">\(y=1\)</span> en
+<span class="arithmatex">\(\pm\infty\)</span> et une asymptote verticale d'équation <span class="arithmatex">\(x=-1\)</span>.</p>
+<p><strong>2.</strong>
+<span class="arithmatex">\(\mathcal{D}=]-\infty~;~-\tfrac{1}{2}[\,\cup\,]\tfrac{1}{2}~;~+\infty[\)</span>.
+On a : <span class="arithmatex">\(\displaystyle\lim_{x\to -1/2}f(x)=-1\)</span> et <span class="arithmatex">\(\displaystyle\lim_{x\to 1/2}f(x)=1\)</span> et, il
+semblerait que <span class="arithmatex">\(\displaystyle\lim_{x\to-\infty}f(x)=-\infty\)</span> et
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty}f(x)=0\)</span>.</p>
+<p><span class="arithmatex">\(\mathcal{C}\)</span> aurait alors une asymptote horizontale d'équation <span class="arithmatex">\(y=0\)</span>
+(l'axe des abscisses) en <span class="arithmatex">\(+\infty\)</span>.</p>
+<h1 id="operations-sur-les-limites">Opérations sur les limites</h1>
+<div class="admonition tip">
+<p class="admonition-title">Limite d'une somme</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(f\)</span></th>
+<th><span class="arithmatex">\(g\)</span></th>
+<th><span class="arithmatex">\(f+g\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td><span class="arithmatex">\(\ell'\)</span></td>
+<td><span class="arithmatex">\(\ell+\ell'\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(+\infty\)</span></td>
+<td><span class="arithmatex">\(-\infty\)</span></td>
+<td><span class="arithmatex">\(-\infty\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(-\infty\)</span></td>
+<td><span class="arithmatex">\(-\infty\)</span></td>
+<td><span class="arithmatex">\(-\infty\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(+\infty\)</span></td>
+<td><span class="arithmatex">\(-\infty\)</span></td>
+<td><span class="arithmatex">\(???\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Limite d'un produit</p>
+<p><span class="arithmatex">\(\ell\)</span> * <span class="arithmatex">\(\ell'\)</span>  :  <span class="arithmatex">\(\ell\ell'\)</span></p>
+<p><span class="arithmatex">\(\ell\!\neq\!0\)</span>   *    <span class="arithmatex">\(\infty\)</span>   : <span class="arithmatex">\(\infty\)</span></p>
+<p><span class="arithmatex">\(\infty\)</span>   *        <span class="arithmatex">\(\infty\)</span> :   <span class="arithmatex">\(\infty\)</span></p>
+<p><span class="arithmatex">\(0\)</span>* <span class="arithmatex">\(\infty\)</span> : <span class="arithmatex">\(???\)</span></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Limite d'un quotient</p>
+<p><span class="arithmatex">\(\ell\)</span>      /        <span class="arithmatex">\(\ell'\!\neq\!0\)</span> :  <span class="arithmatex">\(\ell/\ell'\)</span></p>
+<p><span class="arithmatex">\(\ell\!\neq\!0\)</span>     /           <span class="arithmatex">\(0\)</span>    :        <span class="arithmatex">\(\infty\)</span></p>
+<p><span class="arithmatex">\(\ell\)</span>        /          <span class="arithmatex">\(\infty\)</span>     :      <span class="arithmatex">\(0\)</span></p>
+<p><span class="arithmatex">\(0\)</span>      /      <span class="arithmatex">\(0\)</span>      /       <span class="arithmatex">\(???\)</span></p>
+<p><span class="arithmatex">\(\infty\)</span> / <span class="arithmatex">\(\infty\)</span> : <span class="arithmatex">\(???\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\infty\)</span> peut signifier <span class="arithmatex">\(+\infty\)</span> ou <span class="arithmatex">\(-\infty\)</span>. Les règles du signe
+d'un produit ou d'un quotient demeurent.</p>
+</li>
+<li>
+<p>Pour la limite de la différence <span class="arithmatex">\(f-g\)</span>, on considère la limite de la
+somme <span class="arithmatex">\(f+(-g)\)</span>.</p>
+</li>
+</ul>
+</div>
+<div class="admonition savoir">
+<p class="admonition-title">quatre cas d'indétermination</p>
+<ul>
+<li>
+<p>" <span class="arithmatex">\(\boldsymbol{(+\infty)+(-\infty)}\)</span> "</p>
+</li>
+<li>
+<p>" <span class="arithmatex">\(\boldsymbol{0\times\infty}\)</span> "</p>
+</li>
+<li>
+<p>" <span class="arithmatex">\(\boldsymbol{\dfrac{0}{0}}\)</span> "</p>
+</li>
+<li>
+<p>" <span class="arithmatex">\(\boldsymbol{\dfrac{\infty}{\infty}}\)</span> "</p>
+</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Soit <span class="arithmatex">\(f:x\mapsto  \frac{x-1}{x^2-4}\)</span>. Calculons les limites de <span class="arithmatex">\(f(x)\)</span>
+aux bornes de son domaine de définition.</p>
+</div>
+<h2 id="limite-dune-fonction-composee">Limite d'une fonction composée</h2>
+<h3 id="fonction-composee"><strong>Fonction composée</strong></h3>
+<p>Une composée de deux fonctions correspond à un enchaînement de deux
+fonctions l'une après l'autre.</p>
+<p>Par exemple, composons la fonction <span class="arithmatex">\(f:x\mapsto1-x\)</span> suivie de
+<span class="arithmatex">\(g:x\mapsto\sqrt{x}\)</span>. On peut ainsi schématiser :</p>
+<hr />
+<p><span class="arithmatex">\(x\)</span> <span class="arithmatex">\(\,\mapsto\,\)</span> <span class="arithmatex">\(1-x\)</span> <span class="arithmatex">\(\,\mapsto\,\)</span> <span class="arithmatex">\(\sqrt{1-x}\)</span>.
+<span class="arithmatex">\(f\)</span> <span class="arithmatex">\(g\)</span></p>
+<hr />
+<p>Cependant, on voit que la fonction <span class="arithmatex">\(g\)</span> ne peut s'appliquer que si
+l'ensemble des images par la fonction <span class="arithmatex">\(f\)</span> est inclus dans l'ensemble de
+définition de <span class="arithmatex">\(g\)</span>.</p>
+<p>Ainsi, pour appliquer ici la racine carrée, il faut que <span class="arithmatex">\(1-x\geqslant0\)</span>
+c'est-à-dire que <span class="arithmatex">\(x\leqslant1\)</span>.</p>
+<p>La composée existe donc dans le schéma suivant où on précise les
+ensembles de départ et d'arrivée pour <span class="arithmatex">\(f\)</span> :</p>
+<hr />
+<p><span class="arithmatex">\(]-\infty~;~2]\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\([0~;~+\infty[\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\(\mathbb{R}\)</span>
+<span class="arithmatex">\(x\)</span> <span class="arithmatex">\(\,\mapsto\,\)</span> <span class="arithmatex">\(1-x\)</span> <span class="arithmatex">\(\,\mapsto\,\)</span> <span class="arithmatex">\(\sqrt{1-x}\)</span>
+<span class="arithmatex">\(f\)</span> <span class="arithmatex">\(g\)</span></p>
+<hr />
+<p>En composant <span class="arithmatex">\(f\)</span> suivie de <span class="arithmatex">\(g\)</span>, on a ainsi défini sur <span class="arithmatex">\(]-\infty~;~1]\)</span> la
+fonction <span class="arithmatex">\(x\mapsto\sqrt{1-x}\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Définition </p>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction définie sur <span class="arithmatex">\(E\)</span> et à valeurs dans <span class="arithmatex">\(F\)</span>, et soit <span class="arithmatex">\(g\)</span>
+une fonction définie sur <span class="arithmatex">\(F\)</span>.</p>
+<p><strong>La composée de</strong> <span class="arithmatex">\(\boldsymbol{f}\)</span> <strong>suivie de</strong> <span class="arithmatex">\(\boldsymbol{g}\)</span> est
+la fonction notée <span class="arithmatex">\(\boldsymbol{g\circ f}\)</span> définie sur <span class="arithmatex">\(E\)</span> par
+<span class="arithmatex">\(g\circ f(x)=g(f(x))\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>Il ne faut pas confondre <span class="arithmatex">\(g\circ f\)</span> et <span class="arithmatex">\(f\circ g\)</span> qui sont, en général,
+différentes.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>En reprenant <span class="arithmatex">\(f\)</span> et <span class="arithmatex">\(g\)</span> de l'exemple précédent, définissons <span class="arithmatex">\(f\circ g\)</span>.</p>
+<p>La composée de <span class="arithmatex">\(g\)</span> suivie de <span class="arithmatex">\(f\)</span> est possible en partant de l'ensemble
+de définition de <span class="arithmatex">\(g\)</span> :</p>
+<hr />
+<p><span class="arithmatex">\([0~;~+\infty[\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\([0~;~+\infty[\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\(\mathbb{R}\)</span></p>
+<p><span class="arithmatex">\(x\)</span> <span class="arithmatex">\(\,\mapsto\,\)</span> <span class="arithmatex">\(\sqrt{x}\)</span> <span class="arithmatex">\(\,\mapsto\,\)</span> <span class="arithmatex">\(1-\sqrt{x}\)</span></p>
+<hr />
+<p>En composant <span class="arithmatex">\(g\)</span> suivie de <span class="arithmatex">\(f\)</span>, on a ainsi défini sur <span class="arithmatex">\([0~;~+\infty[\)</span> la
+fonction <span class="arithmatex">\(x\mapsto1-\sqrt{x}\)</span>.</p>
+</div>
+<h3 id="theoreme-de-composition-des-limites">Théorème de composition des limites</h3>
+<div class="admonition tip">
+<p class="admonition-title">Théorème </p>
+<p>Soit <span class="arithmatex">\(h\)</span> la composée de la fonction <span class="arithmatex">\(f\)</span> suivie de <span class="arithmatex">\(g\)</span> et
+<span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\beta\)</span> et
+<span class="arithmatex">\(\gamma\)</span> trois réels ou <span class="arithmatex">\(\pm\ \infty\)</span>.</p>
+<p>Si <span class="arithmatex">\(\displaystyle\lim_{x\to\alpha} f(x)=\beta\)</span> et
+<span class="arithmatex">\(\displaystyle\lim_{x\to\beta} g(x)=\gamma\)</span>,
+alors
+<span class="arithmatex">\(\displaystyle\lim_{x\to\alpha} h(x)=\gamma\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Déterminons la limite en <span class="arithmatex">\(-\infty\)</span> de la fonction <span class="arithmatex">\(g\circ f\)</span> de
+l'exemple précédent.</p>
+<p>La composée de <span class="arithmatex">\(f:x\mapsto 1-x\)</span> suivie de <span class="arithmatex">\(g:x\mapsto\sqrt{x}\)</span> est
+<span class="arithmatex">\(h:x\mapsto \sqrt{1-x}\)</span> définie sur <span class="arithmatex">\(]-\infty~;~1]\)</span>.</p>
+<p>Or, <span class="arithmatex">\(\displaystyle\lim_{x\to -\infty} (1-x)=+\infty\)</span>
+(par somme) et
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty}  \sqrt{x}=+\infty\)</span>
+(limite de référence).</p>
+<p>Donc, d'après le théorème de composition,
+<span class="arithmatex">\(\displaystyle\lim_{x\to -\infty} \sqrt{1-x}=+\infty\)</span>.</p>
+</div>
+<div class="admonition faq">
+<p class="admonition-title">Méthode Déterminer une limite de fonction </p>
+<p>On applique les propriétés d'opérations sur les limites.</p>
+<p>Si la limite est indéterminée, " <span class="arithmatex">\(+\infty+(-\infty)\)</span> ", "
+<span class="arithmatex">\(0\times\infty\)</span> ", " <span class="arithmatex">\(\dfrac{\infty}{\infty}\)</span> " ou " <span class="arithmatex">\(\dfrac{0}{0}\)</span>
+", on essaye de :</p>
+<ul>
+<li>
+<p>factoriser par le terme prépondérant ;</p>
+</li>
+<li>
+<p>multiplier par la quantité conjuguée si des racines carrées
+interviennent ;</p>
+</li>
+<li>
+<p>effectuer un changement de variable (voir théorème de composition
+des limites).</p>
+</li>
+</ul>
+<p>D'autres techniques existent et seront vues ultérieurement.</p>
+<p><strong>Exercice:</strong></p>
+<p>Calculer les limites suivantes :</p>
+<p><strong>1.</strong> <span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\left(\sqrt{x+1}-\sqrt{x}\right)\)</span></p>
+<p><strong>2.</strong> <span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\dfrac{2x^2-3x+1}{x^2-1}\)</span></p>
+<p><strong>3.</strong> <span class="arithmatex">\(\displaystyle\lim_{x\to4}\dfrac{x - 4}{\sqrt{x} - 2}\)</span></p>
+<p><strong>Correction</strong></p>
+<p>Ces limites sont indéterminées (respectivement formes " <span class="arithmatex">\(\infty-\infty\)</span>
+", " <span class="arithmatex">\(\dfrac{\infty}{\infty}\)</span> " et " <span class="arithmatex">\(\dfrac{0}{0}\)</span> ").</p>
+<p><strong>1.</strong> On multiplie le numérateur et le dénominateur par la quantité
+conjuguée de <span class="arithmatex">\(\sqrt{x+1}-\sqrt{x}\)</span> :</p>
+<p><span class="arithmatex">\(\sqrt{x+1}-\sqrt{x}=\dfrac{\left(\sqrt{x+1}-\sqrt{x}\right)\left(\sqrt{x+1}+\sqrt{x}\right)}{\sqrt{x+1}+\sqrt{x}}=\dfrac{1}{\sqrt{x+1}+\sqrt{x}}\)</span>.</p>
+<p>Or, par composition :
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty}(x+1)=\infty\)</span> et
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty}\sqrt{x}=+\infty\)</span>
+donc
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty}\sqrt{x+1}=\infty\)</span>.</p>
+<p>Et, par somme :
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\left(\sqrt{x+1}+\sqrt{x}\right)=+\infty\)</span>. Donc, par
+inverse : <span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\dfrac{1}{\sqrt{x+1}+\sqrt{x}}=0\)</span>.</p>
+<p><strong>2.</strong> Divisons le numérateur et le dénominateur par <span class="arithmatex">\(x^2\)</span>. Alors,
+<span class="arithmatex">\(\dfrac{2x^2-3x+1}{x^2-1}=
+\dfrac{2-\tfrac{3}{x}+\tfrac{1}{x^2}}{1-\tfrac{1}{x^2}}\)</span>.</p>
+<p>Or, par somme :
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\left(2-\dfrac{3}{x}+\dfrac{1}{x^2}\right)=2\)</span> et
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\left(1-\dfrac{1}{x^2}\right)=1\)</span>.</p>
+<p>Donc, par quotient :
+<span class="arithmatex">\(\displaystyle\lim_{x\to+\infty}\dfrac{2-\tfrac{3}{x}+\tfrac{1}{x^2}}{1-\tfrac{1}{x^2}}=2\)</span>.</p>
+<p><strong>3.</strong> Changeons de variable en posant <span class="arithmatex">\(u=\sqrt x\)</span>. Si <span class="arithmatex">\(x\)</span> tend vers
+<span class="arithmatex">\(4\)</span>, alors <span class="arithmatex">\(u\)</span> tend vers <span class="arithmatex">\(2\)</span>.</p>
+<p><span class="arithmatex">\(\dfrac{x-4}{\sqrt x-2}=\dfrac{u^2-4}{u-2}=\dfrac{(u+2)(u-2)}{u-2}=u+2\)</span>
+pour <span class="arithmatex">\(u\neq2\)</span>. Donc, par somme : <span class="arithmatex">\(\displaystyle\lim_{u\to2}(u+2)=4\)</span>.</p>
+</div>
+<h2 id="limites-et-comparaison">Limites et comparaison</h2>
+<h3 id="theoreme-de-comparaison">Théorème de comparaison</h3>
+<div class="admonition tip">
+<p class="admonition-title">Théorème </p>
+<p>Soit <span class="arithmatex">\(f\)</span> et <span class="arithmatex">\(g\)</span> deux fonctions telles que <span class="arithmatex">\(f(x)\leqslant g(x)\)</span> sur un
+intervalle <span class="arithmatex">\(]\alpha~;~+\infty[\)</span> de <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to+\infty} f(x)=+\infty\Rightarrow\displaystyle\lim_{x\to+\infty} g(x)=+\infty\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to+\infty} g(x)=-\infty\Rightarrow\displaystyle\lim_{x\to+\infty} f(x)=-\infty\)</span>.</p>
+</li>
+</ul>
+<p>Soit <span class="arithmatex">\(f\)</span> et <span class="arithmatex">\(g\)</span> deux fonctions telles que <span class="arithmatex">\(f(x)\leqslant g(x)\)</span> sur un
+intervalle <span class="arithmatex">\(]-\infty~;~\beta[\)</span> de <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to-\infty} f(x)=+\infty\Rightarrow\displaystyle\lim_{x\to-\infty} g(x)=+\infty\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to-\infty} g(x)=-\infty\Rightarrow\displaystyle\lim_{x\to-\infty} f(x)=-\infty\)</span>.</p>
+</li>
+</ul>
+<p>Soit <span class="arithmatex">\(f\)</span> et <span class="arithmatex">\(g\)</span> deux fonctions telles que <span class="arithmatex">\(f(x)\leqslant g(x)\)</span> sur un
+intervalle <span class="arithmatex">\(]\alpha~;~\beta[\)</span> de <span class="arithmatex">\(\mathbb{R}\)</span> et
+<span class="arithmatex">\(x_0\in]\alpha~;~\beta[\)</span>.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to x_0} f(x)=+\infty\Rightarrow\displaystyle\lim_{x\to x_0} g(x)=+\infty\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle\lim_{x\to x_0} g(x)=-\infty\Rightarrow\displaystyle\lim_{x\to x_0} f(x)=-\infty\)</span>.</p>
+</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Déterminons la limite en <span class="arithmatex">\(+\infty\)</span> et en <span class="arithmatex">\(-\infty\)</span> de <span class="arithmatex">\(f(x)=x+\sin x\)</span>.</p>
+<p>La limite de <span class="arithmatex">\(\sin x\)</span> en <span class="arithmatex">\(\pm \infty\)</span> est indéterminée donc, celle de
+<span class="arithmatex">\(f(x)\)</span> aussi.</p>
+<p>Mais pour tout <span class="arithmatex">\(x\in\mathbb{R}\)</span>, <span class="arithmatex">\(-1\leqslant\sin x\leqslant 1\)</span> donc
+<span class="arithmatex">\(x-1\leqslant x+\sin x\leqslant x+1\)</span>. Ainsi :</p>
+<ul>
+<li>
+<p>De <span class="arithmatex">\(x-1\leqslant x+\sin x\)</span>   et  
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty} (x-1)=+\infty\)</span>, on déduit que
+<span class="arithmatex">\(\displaystyle\lim_{x\to +\infty} (x+\sin x)=+\infty\)</span>.</p>
+</li>
+<li>
+<p>De <span class="arithmatex">\(x+\sin x\leqslant x+1\)</span>   et  
+<span class="arithmatex">\(\displaystyle\lim_{x\to -\infty} (x+1)=-\infty\)</span>, on déduit que
+<span class="arithmatex">\(\displaystyle\lim_{x\to -\infty} (x+\sin x)=-\infty\)</span>.</p>
+</li>
+</ul>
+</div>
+<h3 id="consequence-croissance-comparee">Conséquence : croissance comparée</h3>
+<div class="admonition tip">
+<p class="admonition-title">Théorème </p>
+<p>Pour tout entier naturel <span class="arithmatex">\(n\)</span>,
+<span class="arithmatex">\(\displaystyle\lim_{n\rightarrow +\infty} \frac{e^x}{x^n}=+\infty\)</span>.</p>
+</div>
+<p>[Démonstration]{.underline} :</p>
+<p>Pour tout réel <span class="arithmatex">\(y\)</span>, <span class="arithmatex">\(y&lt;e^y\)</span>.</p>
+<p>On pose : <span class="arithmatex">\(y=\frac{x}{n+1}\)</span>. L'inégalité devient:
+<span class="arithmatex">\(\frac{x}{n+1}&lt;^{\frac{x}{n+1}}\)</span>.</p>
+<p>La fonction <span class="arithmatex">\(t \mapsto t^{n+1}\)</span> est strictement croissante sur
+<span class="arithmatex">\([0 ; +\infty[\)</span>.</p>
+<p>Donc :</p>
+<p><span class="arithmatex">\(\left(\frac{x}{n+1}\right)^{n+1}&lt;\left(^{\frac{x}{n+1}}\right)^{n+1} \iff \frac{x^{n+1}}{(n+1)^{n+1}}&lt;e^x \iff \frac{x}{(n+1)^{n+1}}&lt;\frac{e^x}{x^n}\)</span>.</p>
+<p>Or, <span class="arithmatex">\(\displaystyle\lim_{x\rightarrow+\infty} \frac{x}{(n+1)^{n+1}}=+\infty\)</span>, donc
+d'après le théorème de comparaison,
+<span class="arithmatex">\(\displaystyle\lim_{x\rightarrow+\infty} \frac{e^x}{x^n}=+\infty\)</span>.</p>
+<h3 id="theoreme-dencadrement-dit-des-gendarmes">Théorème d'encadrement dit " des gendarmes "</h3>
+<div class="admonition tip">
+<p class="admonition-title">Théorème </p>
+<p>Soit deux réels <span class="arithmatex">\(\alpha\)</span> et <span class="arithmatex">\(\ell\)</span> et trois fonctions <span class="arithmatex">\(f\)</span>, <span class="arithmatex">\(g\)</span> et <span class="arithmatex">\(h\)</span>
+telles que, pour <span class="arithmatex">\(x&gt;\alpha\)</span>, on a <span class="arithmatex">\(f(x)\leqslant g(x)\leqslant h(x)\)</span>.</p>
+<p>Si <span class="arithmatex">\(\displaystyle\lim_{x\rightarrow+\infty}f(x)=\displaystyle\lim_{x\rightarrow+\infty}h(x)=\ell\)</span>,
+alors <span class="arithmatex">\(\displaystyle\lim_{x\rightarrow+\infty}g(x)=\ell\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>On a, comme pour le théorème de comparaison précédent, deux théorèmes
+analogues lorsque <span class="arithmatex">\(x\)</span> tend vers <span class="arithmatex">\(-\infty\)</span> et lorsque <span class="arithmatex">\(x\)</span> tend vers un
+réel <span class="arithmatex">\(x_0\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Déterminons la limite en <span class="arithmatex">\(-\infty\)</span> de <span class="arithmatex">\(f(x)=\dfrac{x\cos x}{x^2+1}\)</span>.</p>
+<p>La limite de <span class="arithmatex">\(\cos x\)</span> en <span class="arithmatex">\(-\infty\)</span> est indéterminée. Donc celle de
+<span class="arithmatex">\(f(x)\)</span> aussi.</p>
+<p>Cependant pour tout <span class="arithmatex">\(x\)</span> réel strictement négatif,
+<span class="arithmatex">\(-1\leqslant\cos x\leqslant 1\)</span> donc <span class="arithmatex">\(x\leqslant x\cos x\leqslant -x\)</span>.</p>
+<p>Et en divisant membre à membre par <span class="arithmatex">\(x^2+1&gt;0\)</span> on a :
+<span class="arithmatex">\(\dfrac{x}{x^2+1}\leqslant \dfrac{x\cos x}{x^2+1}\leqslant \dfrac{-x}{x^2+1}\)</span>.</p>
+<p>Pour <span class="arithmatex">\(x\in\mathbb{R}^*\)</span>, <span class="arithmatex">\(\dfrac{x}{x^2+1} = \dfrac{1}{x+\tfrac{1}{x}}\)</span>.</p>
+<p>Or, <span class="arithmatex">\(\displaystyle\lim_{x\rightarrow-\infty}\left(x+\frac{1}{x}\right) = -\infty\)</span>
+donc
+<span class="arithmatex">\(\displaystyle\lim_{x\rightarrow-\infty}\dfrac{x}{x^2+1} = \displaystyle\lim_{x\rightarrow-\infty}\dfrac{-x}{x^2+1}=0\)</span>.</p>
+<p>Donc, d'après le théorème des gendarmes,
+<span class="arithmatex">\(\displaystyle\lim_{x\rightarrow-\infty}\dfrac{x\cos x}{x^2+1}=0\)</span>.</p>
+</div>
+<h2 id="continuite-dune-fonction">Continuité d'une fonction</h2>
+<div class="admonition tip">
+<p class="admonition-title">Définition </p>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction définie sur un intervalle <span class="arithmatex">\(I\)</span> et un réel
+<span class="arithmatex">\(x_{0}\in I\)</span>.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(f\)</span> est <strong>continue en</strong> <span class="arithmatex">\(x_{0}\)</span> si
+<span class="arithmatex">\(\displaystyle\lim_{x\to x_0}f(x)=f(x_0)\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(f\)</span> est <strong>continue sur</strong> <span class="arithmatex">\(\boldsymbol{I}\)</span> si, pour tout <span class="arithmatex">\(x\in I\)</span>,
+<span class="arithmatex">\(f\)</span> est continue en <span class="arithmatex">\(x\)</span>.</p>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>On peut considérer qu'une fonction est continue sur un intervalle <span class="arithmatex">\(I\)</span> si
+sa courbe représentative sur <span class="arithmatex">\(I\)</span> peut être tracée entièrement sans lever
+le crayon.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Propriété </p>
+<ul>
+<li>
+<p>Les fonctions usuelles (affines, carré, inverse, racine carrée,
+valeur absolue) sont continues sur tout intervalle inclus dans leur
+ensemble de définition.</p>
+</li>
+<li>
+<p>Toute fonction construite algébriquement (par somme, produit,
+inverse ou composée) à partir de fonctions usuelles est continue sur
+tout intervalle de son ensemble de définition.</p>
+</li>
+<li>
+<p>On convient qu'une flèche oblique dans un tableau de variation
+traduit la continuité et la stricte monotonie de la fonction sur
+l'intervalle considéré.</p>
+</li>
+<li>
+<p>Une fonction dérivable sur un intervalle est continue sur cet
+intervalle.</p>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>Attention, la réciproque de cette dernière propriété est fausse.\
+Par exemple, la fonction valeur absolue <span class="arithmatex">\(x\mapsto |x|\)</span> est continue en 0
+mais non dérivable en 0.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Par convention, une fonction est continue là où elle est tracée. S'il
+n'y a pas continuité en <span class="arithmatex">\(x_0\)</span> :</p>
+<ul>
+<li>
+<p>le symbole [<span class="arithmatex">\(\bullet\)</span>]{style="color: B2"} indique le point de la
+courbe de coordonnées <span class="arithmatex">\((x_0~;~f(x_0))\)</span> ;</p>
+</li>
+<li>
+<p>le symbole
+[<span class="arithmatex">\(\bullet\)</span>]{style="color: white"}[<span class="arithmatex">\(\boldsymbol{\circ}\)</span>]{style="color: B2"}
+indique un point qui n'appartient pas à la courbe mais dont
+l'ordonnée est égale à la limite à gauche ou à droite en <span class="arithmatex">\(x_0\)</span>.</p>
+</li>
+</ul>
+<p>Soit la fonction <span class="arithmatex">\(f\)</span> représentée ci-dessous.</p>
+<p><img alt="image" src="../img/03_limites_tvi-6.jpg" /></p>
+<p><span class="arithmatex">\(f\)</span> est " affine par morceaux ". <span class="arithmatex">\(\mathcal{C}_f\)</span> a un " saut " en 0
+donc <span class="arithmatex">\(f\)</span> n'est pas continue sur <span class="arithmatex">\([-3~;~3]\)</span> mais elle est continue sur
+<span class="arithmatex">\([-3~;~0]\)</span> et <span class="arithmatex">\(]0~;~3]\)</span>. En effet, on a <span class="arithmatex">\(f(0)=-1\)</span> mais
+<span class="arithmatex">\(\displaystyle\lim_{\substack{x\to 0\\ x&gt;0}} f(x)=1\)</span>.</p>
+</div>
+<h2 id="theoreme-des-valeurs-intermediaires">Théorème des valeurs intermédiaires</h2>
+<div class="admonition tip">
+<p class="admonition-title">Théorème Cas général</p>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction définie sur un intervalle <span class="arithmatex">\(I\)</span> contenant deux réels
+<span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span> tels que <span class="arithmatex">\(a&lt;b\)</span>.</p>
+<p>Si <span class="arithmatex">\(f\)</span> est continue sur <span class="arithmatex">\([a~;~b]\)</span>, alors pour tout réel <span class="arithmatex">\(k\)</span> compris
+entre <span class="arithmatex">\(f(a)\)</span> et <span class="arithmatex">\(f(b)\)</span>, il existe au moins un réel <span class="arithmatex">\(c\)</span> appartenant à
+<span class="arithmatex">\([a~;~b]\)</span> tel que <span class="arithmatex">\(f(c)=k\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p><span class="arithmatex">\(f\)</span> prend au moins une fois toute valeur intermédiaire entre <span class="arithmatex">\(f(a)\)</span> et
+<span class="arithmatex">\(f(b)\)</span>.</p>
+<p>Autrement dit, l'équation <span class="arithmatex">\(f(x)=k\)</span> a au moins une solution dans
+<span class="arithmatex">\([a~;~b]\)</span> et, sur <span class="arithmatex">\([a~;~b]\)</span>, la courbe représentative de <span class="arithmatex">\(f\)</span> coupe la
+droite d'équation <span class="arithmatex">\(y=k\)</span> en un point au moins.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Soit <span class="arithmatex">\(f\)</span> la fonction définie sur <span class="arithmatex">\([0~;~6]\)</span> par
+<span class="arithmatex">\(f(x)=\dfrac{x^3}{4}-\dfrac{9}{4}x^2+6x-3\)</span>.</p>
+<p><img alt="image" src="../img/03_limites_tvi-7.jpg" /></p>
+<p>On dresse le tableau de variation de <span class="arithmatex">\(f\)</span>.</p>
+<p><span class="arithmatex">\(f\)</span> admet pour minimum <span class="arithmatex">\(-3\)</span> et pour maximum 6.</p>
+<p><span class="arithmatex">\(f\)</span> est continue sur <span class="arithmatex">\([0~;~6]\)</span>.</p>
+<p><img alt="image" src="../img/03_limites_tvi-0.jpg" /></p>
+<p>Donc, d'après le théorème des valeurs intermédiaires, <span class="arithmatex">\(f\)</span> prend toutes
+les valeurs de <span class="arithmatex">\([-3~;~6]\)</span>. En particulier, l'équation
+<span class="arithmatex">\(f(x)=0\)</span> a au moins une solution dans <span class="arithmatex">\([0~;~6]\)</span>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Théorème Cas d'une fonction strictement monotone</p>
+<p>Soit <span class="arithmatex">\(f\)</span> une fonction définie sur un intervalle <span class="arithmatex">\(I\)</span> contenant deux réels
+<span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span> tels que <span class="arithmatex">\(a&lt;b\)</span>.</p>
+<p>Si <span class="arithmatex">\(f\)</span> est continue et <strong>strictement monotone</strong> sur <span class="arithmatex">\([a~;~b]\)</span>, alors
+pour tout réel <span class="arithmatex">\(k\)</span> compris entre <span class="arithmatex">\(f(a)\)</span> et <span class="arithmatex">\(f(b)\)</span>, il existe <strong>un
+unique</strong> réel <span class="arithmatex">\(c\)</span> appartenant à <span class="arithmatex">\([a~;~b]\)</span> tel que <span class="arithmatex">\(f(c)=k\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple </p>
+<p>Reprenons la fonction <span class="arithmatex">\(f:x\mapsto\dfrac{x^3}{4}-\dfrac{9}{4}x^2+6x-3\)</span>.</p>
+<p><img alt="image" src="../img/03_limites_tvi-8.jpg" /></p>
+<p><img alt="image" src="../img/03_limites_tvi-1.jpg" /></p>
+<p>Sur <span class="arithmatex">\([0~;~2]\)</span>, <span class="arithmatex">\(f\)</span> est continue, strictement croissante et admet pour
+minimum <span class="arithmatex">\(-3\)</span> et maximum <span class="arithmatex">\(2\)</span>.</p>
+<p>Donc, <span class="arithmatex">\(f\)</span> prend une fois, et une seule, toutes les valeurs
+intermédiaires entre <span class="arithmatex">\(-3\)</span> et 2.</p>
+<p>En particulier, l'équation <span class="arithmatex">\(f(x)=0\)</span> a une unique solution <span class="arithmatex">\(\alpha\)</span> entre
+0 et 2.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Remarque </p>
+<p>Le théorème des valeurs intermédiaires s'applique aussi pour <span class="arithmatex">\(f\)</span>
+continue sur un intervalle <span class="arithmatex">\(I\)</span> de type : <span class="arithmatex">\([a~;~b[\)</span>, <span class="arithmatex">\(]a~;~b]\)</span>,
+<span class="arithmatex">\(]a~;~b[\)</span>, <span class="arithmatex">\([a~;~+\infty[\)</span>, <span class="arithmatex">\(]a~;~+\infty[\)</span>, <span class="arithmatex">\(]-\infty~;~b]\)</span> ou
+<span class="arithmatex">\(]-\infty~;~b[\)</span>, <span class="arithmatex">\(]-\infty\ ;\ +\infty[\)</span>.</p>
+<p>Si une borne <span class="arithmatex">\(a\)</span> ou <span class="arithmatex">\(b\)</span> de l'intervalle est ouverte, alors on remplace
+<span class="arithmatex">\(f(a)\)</span> ou <span class="arithmatex">\(f(b)\)</span> par la limite de <span class="arithmatex">\(f\)</span> en cette borne ; si une borne de
+l'intervalle est <span class="arithmatex">\(\pm\infty\)</span>, alors on considère la limite de <span class="arithmatex">\(f\)</span> en
+<span class="arithmatex">\(\pm\infty\)</span>.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exploiter le théorème des valeurs intermédiaires</label><label for="__tabbed_1_2">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Le théorème des valeurs intermédiaires (T.V.I.) est utile pour prouver
+l'existence d'une solution d'une équation du type
+<span class="arithmatex">\(f(x)=k\)</span> et dénombrer ces solutions.Pour cela:</p>
+<ul>
+<li>
+<p>On dresse le tableau de variation de la fonction <span class="arithmatex">\(f\)</span> ;</p>
+</li>
+<li>
+<p>On applique le T.V.I. à chaque intervalle où la fonction est
+strictement monotone.</p>
+</li>
+</ul>
+<p>Dénombrer les solutions de l'équation (E) : <span class="arithmatex">\(x^4+3x^3+x^2+1=0\)</span>.</p>
+</div>
+<div class="tabbed-block">
+<p><span class="arithmatex">\(f:x\mapsto x^4+3x^3+x^2+1\)</span> est une fonction polynôme de degré 4
+dérivable sur <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<p><span class="arithmatex">\(f'(x)=4x^3+9x^2+2x=x(4x^2+9x+2)=x(x+2)(4x+1)\)</span> après factorisation du
+trinôme.</p>
+<p>On établit alors le tableau de signes de <span class="arithmatex">\(f'(x)\)</span> et de variation de <span class="arithmatex">\(f\)</span>
+:</p>
+<p><img alt="image" src="../img/03_limites_tvi-2.jpg" /></p>
+<p>Sur <span class="arithmatex">\(]-\infty~;~-2]\)</span>, <span class="arithmatex">\(f\)</span> est continue, strictement décroissante et :
+<span class="arithmatex">\(\displaystyle\lim_{x\to-\infty}f(x)=+\infty\)</span> ; <span class="arithmatex">\(f(-2)=-3\)</span>.</p>
+<p>Donc, d'après le T.V.I., l'équation (E) a une unique solution
+<span class="arithmatex">\(\alpha\)</span> inférieure à <span class="arithmatex">\(-2\)</span>.</p>
+<p>Sur <span class="arithmatex">\(\left[-2~;~-\frac{1}{4}\right]\)</span> , <span class="arithmatex">\(f\)</span> est continue, strictement
+croissante et : <span class="arithmatex">\(f(-2)=-3\)</span> ; <span class="arithmatex">\(f\left(-\frac{1}{4}\right)\approx1,02&gt;0\)</span>.</p>
+<p>Donc, d'après le T.V.I., l'équation (E) a une unique solution
+<span class="arithmatex">\(\beta\)</span> comprise entre <span class="arithmatex">\(-2\)</span> et
+<span class="arithmatex">\(-\frac{1}{4}\)</span>.</p>
+<p>Sur <span class="arithmatex">\(\left[-\frac{1}{4}~;~0\right]\)</span> et <span class="arithmatex">\(\left[0~;~+\infty\right[\)</span>, le
+minimum de <span class="arithmatex">\(f\)</span> est <span class="arithmatex">\(1&gt;0\)</span> donc on n'y trouve pas de solution.</p>
+<p>Conclusion : l'équation (E) admet exactement deux solutions dans
+<span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+</div>
+</div>
+</div>
+<h2 id="fonction-continue-et-suite-convergente">Fonction continue et suite convergente</h2>
+<div class="admonition tip">
+<p class="admonition-title">Théorème </p>
+<p>Soit une fonction <span class="arithmatex">\(f\)</span> définie et continue sur un intervalle <span class="arithmatex">\(I\)</span> et une
+suite <span class="arithmatex">\((u_n)\)</span> telle que pour tout entier naturel <span class="arithmatex">\(n\)</span>,on a : <span class="arithmatex">\(u_n \in I\)</span>
+et <span class="arithmatex">\(u_{n+1}=f(u_n)\)</span>.</p>
+<p>Si <span class="arithmatex">\((u_n)\)</span> converge vers <span class="arithmatex">\(l\)</span> de <span class="arithmatex">\(I\)</span>, alors <span class="arithmatex">\(f(l)=l\)</span>.</p>
+<p>Autrement dit : <span class="arithmatex">\(l\)</span> est solution de l'équation <span class="arithmatex">\(f(x)=x\)</span>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Soit la suite <span class="arithmatex">\((u_n)\)</span> définie pour tout entier naturel <span class="arithmatex">\(n\)</span> par <span class="arithmatex">\(u_0=0\)</span>
+et <span class="arithmatex">\(u_{n+1}=\sqrt{3u_n+4}\)</span>.</p>
+<p>On peut démontrer par récurrence que <span class="arithmatex">\((u_n)\)</span> est croissante et majorée
+par 4. (on l'admet sur cet exemple). Donc <span class="arithmatex">\((u_n)\)</span> converge (théorème de
+convergence des suites monotones).</p>
+<p>la fonction <span class="arithmatex">\(f\)</span> associée est <span class="arithmatex">\(f: x \mapsto \sqrt{3x+4}\)</span>.</p>
+<p><span class="arithmatex">\(f\)</span> est continue sur <span class="arithmatex">\([-\frac{4}{3} ; +\infty[\)</span> comme composée de
+fonctions continues sur cet intervalle. (<span class="arithmatex">\(f=g\circ h\)</span>, avec
+<span class="arithmatex">\(h : x \mapsto 3x+4\)</span> et <span class="arithmatex">\(g:x \mapsto \sqrt{x}\)</span>)</p>
+<p>Soit <span class="arithmatex">\(l=\displaystyle\lim_{n \to +\infty} u_n\)</span>. <span class="arithmatex">\(l\)</span> est solution de l'équation :
+<span class="arithmatex">\(l=f(l) \iff l=\sqrt{3l+4}\)</span>.</p>
+<p>Déterminons <span class="arithmatex">\(l\)</span>.</p>
+<p><span class="arithmatex">\(l\)</span> existe ssi <span class="arithmatex">\(3l+4 \geq 0\)</span> ssi <span class="arithmatex">\(l \geq -\frac{4}{3}\)</span>.</p>
+<p><span class="arithmatex">\(l=\sqrt{3l+4} \Rightarrow l^2=3l+4 \iff l^2-3l-4=0\)</span>.</p>
+<p><span class="arithmatex">\(\Delta=25\)</span> . <span class="arithmatex">\(l_1=-1\)</span> et <span class="arithmatex">\(l_2=4\)</span>.</p>
+<p>Or, <span class="arithmatex">\(u_0=0\)</span> et <span class="arithmatex">\((u_n)\)</span> est croissante donc la seule possibilité est
+<span class="arithmatex">\(l_2=4\)</span>.</p>
+<p>la limite de la suite <span class="arithmatex">\((u_n)\)</span> est 4.</p>
+</div>
+<!-- prettier-ignore -->
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Dernière mise à jour:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2023</span>
+      
+        <br>
+        Créé:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC BY-SA / David Couronné
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="mailto:david-couronne@ac-rennes.fr" target="_blank" rel="noopener" title="Écrire à l&#39;auteur" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://github.com/davidcouronne/info-maths" target="_blank" rel="noopener" title="Dépôt git" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://lycee-de-cornouaille-quimper.ac-rennes.fr" target="_blank" rel="noopener" title="Lycée de Cornouaille - Quimper" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h544c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM256 416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H256v-96zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-64zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-64zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Les Cookies</h4>
+<p>Nous utilisons des cookies pour reconnaître vos visites répétées et vos préférences, ainsi que pour mesurer l'efficacité de notre site et si les utilisateurs trouver ce qu'ils recherchent. Avec votre consentement, vous nous aidez à améliorer notre site.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepter</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Paramétrer vos choix</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "content.action.view", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js"></script>
+      
+        <script src="../../javascripts/clarity.js"></script>
+      
+    
+  </body>
+</html>
